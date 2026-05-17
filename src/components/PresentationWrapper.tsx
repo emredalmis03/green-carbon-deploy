@@ -339,29 +339,6 @@ const PresentationWrapper = ({ children }: { children: React.ReactNode }) => {
       ),
     },
     {
-      title: "Teknoloji",
-      subtitle: "Modern Stack",
-      content: (
-        <div className="space-y-6">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
-              <span className="text-white/40 text-[10px] block mb-2 uppercase">Frontend</span>
-              <span className="text-lg font-bold text-white">Next.js / React</span>
-            </div>
-            <div className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center">
-              <span className="text-white/40 text-[10px] block mb-2 uppercase">Backend</span>
-              <span className="text-lg font-bold text-white">TypeScript</span>
-            </div>
-            <div className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center col-span-2">
-              <span className="text-white/40 text-[10px] block mb-2 uppercase">AI Model</span>
-              <span className="text-lg font-bold text-[#39FF14]">Google Gemini LLM</span>
-            </div>
-          </div>
-          <p className="text-center text-[10px] text-white/40 uppercase tracking-widest">Yüksek Performanslı B2B SaaS Mimarisi</p>
-        </div>
-      ),
-    },
-    {
       title: "Yol Haritası",
       subtitle: "Büyüme Planı",
       content: (
