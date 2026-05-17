@@ -208,20 +208,6 @@ const PresentationWrapper = ({ children }: { children: React.ReactNode }) => {
       ),
     },
     {
-      title: "Sistem",
-      subtitle: "Verimli Çözüm",
-      content: (
-        <div className="space-y-6">
-          <div className="p-8 rounded-[2.5rem] bg-[#39FF14]/5 border border-[#39FF14]/20 backdrop-blur-md flex flex-col items-center text-center">
-            <ShieldCheck className="w-16 h-16 text-[#39FF14] mb-6" />
-            <p className="text-white text-xl font-bold leading-relaxed">
-              "Sistem böylece karbon emisyonuna sebep olan etkenleri etkili şekilde tespit ederek buna karşı en verimli çözüm yöntemlerini sunar."
-            </p>
-          </div>
-        </div>
-      ),
-    },
-    {
       title: "Pazar",
       subtitle: "Rakip Karşılaştırması",
       content: (
