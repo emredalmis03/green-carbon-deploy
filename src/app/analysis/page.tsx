@@ -242,7 +242,7 @@ export default function AnalysisPage() {
                     paddingAngle={8}
                     dataKey="value"
                     stroke="none"
-                    label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
+                    label={({ percent }) => `${(((percent ?? 0) * 100).toFixed(0))}%`}
                   >
                     {scopeData.map((entry, i) => <Cell key={i} fill={entry.color} />)}
                   </Pie>
