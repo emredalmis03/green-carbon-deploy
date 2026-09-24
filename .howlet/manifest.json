@@ -1,5 +1,5 @@
 {
-  "artefact_count": 221,
+  "artefact_count": 222,
   "artefacts": [
     "flows/01a03e41-fe15-7204-9f51-fa9b2ca933cc-probe-obj-inputq.json",
     "flows/01a03e42-0239-7556-a3c3-4cf88d547b7d-probe-db-binding.json",
@@ -121,6 +121,7 @@
     "agents/01a089ef-788f-7bba-87e1-8ca244c46b6b-zincir2-emre-170-isci-2.json",
     "agents/01a07aa0-82da-7d68-b1d5-7343146da126-ara\u015ft\u0131rma-\u015fefi.json",
     "agents/01a0907a-e13f-7ae9-9c5f-89023b8689f3-zincir2-emre-167-ui-ajan.json",
+    "agents/01a0d27a-42ad-7703-b892-141b30263e6e-irem-memory-test-2-(1).json",
     "agents/01a09f55-f756-7a19-8cb0-f34b8c7eace5-tree-agent-2.json",
     "agents/01a0a393-fca4-7f10-b2ad-debe45e072d8-proof-5112-absent-model.json",
     "agents/01a04241-7d40-7e01-8b62-de56d737c378-probe-real-7bdc7b.json",
@@ -228,7 +229,7 @@
   "schema": "howlet-git-sync/1.0",
   "scope_targets": [],
   "scope_type": "workspace",
-  "synced_at": "2026-09-24T07:55:19.421979+00:00",
+  "synced_at": "2026-09-24T08:53:55.263455+00:00",
   "tenant_id": "0b5f56e2-23fb-4fac-b043-501e1b9ddf29",
   "workspace_id": "b1b087b7-ea4d-581e-af43-fe10e0cf6565"
 }
