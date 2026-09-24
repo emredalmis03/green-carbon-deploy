@@ -1,7 +1,7 @@
 {
   "config": {
     "action": "block",
-    "block_message": "Komut enjeksiyonu deneniyor gibi g\u00f6r\u00fcn\u00fcyor. Ben sadece hava durumu sorular\u0131na yard\u0131mc\u0131 olabilirim.",
+    "block_message": "G\u00fcvenlik nedeniyle bu mesaj i\u015flenemedi. L\u00fctfen sorunuzu yeniden yaz\u0131n.",
     "detect_jailbreak": true,
     "llm_rules": [
       {

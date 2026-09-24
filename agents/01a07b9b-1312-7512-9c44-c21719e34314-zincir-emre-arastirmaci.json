@@ -20,8 +20,8 @@
   "multi_agent_config": null,
   "name": "zincir-emre-arastirmaci",
   "project_id": null,
-  "system_prompt": "Turkce cevap ver. Bilmedigin olguyu aracla ara, kaynak adini yaz.",
-  "temperature": 0.7,
+  "system_prompt": "Turkce ve kisa cevap ver. Her iddia icin arac ciktisindan alinti yap.",
+  "temperature": 0.9,
   "tools_config": {
     "tool_ids": [
       "01a07bc7-7ff2-7917-ab7c-9bdfa2b3defb"
