@@ -26,7 +26,7 @@
   "multi_agent_config": null,
   "name": "zincir-emre-ajan",
   "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
-  "system_prompt": "Sorulari yalnizca bagli bilgi bankasindaki belgelere dayanarak yanitla.",
+  "system_prompt": "Sorulari once bagli bilgi bankasindan yanitla; orada yoksa genel bilginle yanitla ve hangi kaynagi kullandigini belirt.",
   "temperature": 0.7,
   "tools_config": null,
   "version": 33,
