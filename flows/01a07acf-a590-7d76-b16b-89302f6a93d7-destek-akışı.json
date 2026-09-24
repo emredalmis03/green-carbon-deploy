@@ -1,0 +1,174 @@
+{
+  "created_by_name": "",
+  "description": "Kullan\u0131c\u0131 destek sorular\u0131 i\u00e7in sohbet aray\u00fcz\u00fc ile entegre destek ak\u0131\u015f\u0131",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e-chat-input-1-agent-node-1-0",
+        "source": "chat-input-1",
+        "target": "agent-node-1"
+      },
+      {
+        "animated": true,
+        "id": "e-agent-node-1-chat-output-1-1",
+        "source": "agent-node-1",
+        "target": "chat-output-1"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_kb-1789021637559-agent-node-1knowledge",
+        "source": "howlet_kb-1789021637559",
+        "target": "agent-node-1",
+        "targetHandle": "knowledge"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_tool-1789021639291-agent-node-1",
+        "source": "howlet_tool-1789021639291",
+        "target": "agent-node-1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "icon": "\ud83d\udcac",
+          "label": "Sohbet Giri\u015fi"
+        },
+        "id": "chat-input-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a07acf-8496-7b39-94cb-dac83bcac881",
+            "memory_mode": "inherit"
+          },
+          "icon": "\ud83e\udd16",
+          "label": "M\u00fc\u015fteri Destek Ajan\u0131",
+          "resourceSummary": "single \u00b7 bedrock \u00b7 global.anthropic.claude-haiku-4-5-20251001-v1:0 \u00b7 0.2 \u00b7 4096"
+        },
+        "id": "agent-node-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 300,
+          "y": 0
+        },
+        "selected": true,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "icon": "\ud83d\udce4",
+          "label": "Sohbet \u00c7\u0131k\u0131\u015f\u0131"
+        },
+        "id": "chat-output-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 600,
+          "y": 0
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_kb",
+          "config": {
+            "kb_id": "01a0668c-96ca-7227-b837-9f9a8057c9f4"
+          },
+          "description": "Retrieve relevant chunks from a DataHub KB (RAG)",
+          "icon": "\ud83d\udcda",
+          "label": "qa-s1-politika-ad",
+          "resourceSummary": "active \u00b7 4 \u00b7 7"
+        },
+        "dragging": false,
+        "id": "howlet_kb-1789021637559",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 400,
+          "y": 140
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_tool",
+          "config": {},
+          "description": "Execute a custom or bundle tool",
+          "icon": "\ud83d\udd27",
+          "label": "Tool"
+        },
+        "dragging": false,
+        "id": "howlet_tool-1789021639291",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 220,
+          "y": 140
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be"
+          },
+          "description": "Bind a workspace connection and pull live data - statically or straight from the flow input",
+          "icon": "\ud83d\udd0c",
+          "label": "demo-testbed-postgres",
+          "resourceSummary": ""
+        },
+        "dragging": false,
+        "id": "howlet_connector-1789021851789",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 340,
+          "y": -140
+        },
+        "selected": false,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a07acf-a590-7d76-b16b-89302f6a93d7",
+  "metadata_extra": null,
+  "name": "Destek Ak\u0131\u015f\u0131",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 52,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

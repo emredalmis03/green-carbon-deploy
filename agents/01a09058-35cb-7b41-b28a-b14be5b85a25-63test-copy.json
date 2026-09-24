@@ -1,0 +1,33 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a09058-35cb-7b41-b28a-b14be5b85a25",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "63test-copy",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "status": "active",
+  "system_prompt": "You are a helpful AI assistant with access to tools. Follow these rules:\n\n1. Use the available tools to answer questions and complete tasks.\n2. Think step by step before acting.\n3. If a tool call fails, try a different approach rather than repeating the same call.\n4. Always confirm destructive actions before executing them.\n5. Be concise in your responses. Provide results, not narration.\n6. If you lack the information or tools to complete a task, say so clearly.",
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

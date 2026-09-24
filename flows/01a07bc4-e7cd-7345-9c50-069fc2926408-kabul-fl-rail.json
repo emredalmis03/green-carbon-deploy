@@ -1,0 +1,195 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_agent-1788782929022-chat_output-1788783034694",
+        "source": "howlet_agent-1788782929022",
+        "target": "chat_output-1788783034694"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788782921906-howlet_kb-1788783053673",
+        "selected": false,
+        "source": "chat_input-1788782921906",
+        "target": "howlet_kb-1788783053673"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_kb-1788783053673-chat_output-1788783034694",
+        "source": "howlet_kb-1788783053673",
+        "target": "chat_output-1788783034694"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_guardrail-1788783066440-howlet_agent-1788782929022guardrail",
+        "source": "howlet_guardrail-1788783066440",
+        "target": "howlet_agent-1788782929022",
+        "targetHandle": "guardrail"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788782921906-howlet_multi_agent-1788783336352",
+        "source": "chat_input-1788782921906",
+        "target": "howlet_multi_agent-1788783336352"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_multi_agent-1788783336352-howlet_agent-1788782929022",
+        "source": "howlet_multi_agent-1788783336352",
+        "target": "howlet_agent-1788782929022"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "dragging": false,
+        "id": "chat_input-1788782921906",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 300,
+          "y": 360
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a07bbb-c984-74e6-a386-fd49ec701ed2",
+            "memory_mode": "inherit"
+          },
+          "description": "Run a saved Howlet agent (tools + KB + guardrails)",
+          "icon": "\ud83e\udd16",
+          "label": "kabul-ajan",
+          "resourceSummary": "single \u00b7 bedrock \u00b7 global.anthropic.claude-haiku-4-5-20251001-v1:0 \u00b7 0.7 \u00b7 2048"
+        },
+        "dragging": false,
+        "id": "howlet_agent-1788782929022",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 840,
+          "y": 360
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1788783034694",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1000,
+          "y": 360
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_kb",
+          "config": {
+            "kb_id": "01a05c69-2efe-70ab-8ad1-5ddb8f72f272"
+          },
+          "description": "Retrieve relevant chunks from a DataHub KB (RAG)",
+          "icon": "\ud83d\udcda",
+          "label": "HIT30 Sanayi Bilgi Bankas\u0131",
+          "resourceSummary": "active \u00b7 22 \u00b7 159"
+        },
+        "id": "howlet_kb-1788783053673",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 860,
+          "y": 520
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_guardrail",
+          "config": {
+            "guardrail_id": "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+          },
+          "description": "Check / redact with Howlet Guard (policy or PII)",
+          "icon": "\ud83d\udee1\ufe0f",
+          "label": "coaching-scope-guardrail",
+          "resourceSummary": "presidio"
+        },
+        "dragging": false,
+        "id": "howlet_guardrail-1788783066440",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1020,
+          "y": 520
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_multi_agent",
+          "config": {},
+          "description": "Run a multi-agent team",
+          "icon": "\ud83c\udf9b",
+          "label": "Multi-Agent"
+        },
+        "dragging": false,
+        "id": "howlet_multi_agent-1788783336352",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 360
+        },
+        "selected": true,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a07bc4-e7cd-7345-9c50-069fc2926408",
+  "metadata_extra": null,
+  "name": "kabul-fl-rail",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 25,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

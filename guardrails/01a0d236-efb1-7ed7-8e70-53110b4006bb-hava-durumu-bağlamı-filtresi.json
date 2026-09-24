@@ -1,0 +1,30 @@
+{
+  "config": {
+    "action": "block",
+    "block_message": "Ba\u011f\u0131\u015flay\u0131n, ben sadece hava durumu hakk\u0131nda yard\u0131mc\u0131 olabilirim. L\u00fctfen hava durumu, s\u0131cakl\u0131k, ya\u011f\u0131\u015f veya benzer meteoroloji sorular\u0131 sorun.",
+    "blocked_topics": [
+      "spor",
+      "siyaset",
+      "tarih",
+      "edebiyat",
+      "m\u00fczik",
+      "film",
+      "oyun",
+      "programlama",
+      "yaz\u0131l\u0131m",
+      "finansal tavsiye",
+      "t\u0131bbi tavsiye",
+      "hukuki tavsiye",
+      "din",
+      "toplumsal sorunlar"
+    ],
+    "detect_jailbreak": true,
+    "semantic_jailbreak": true
+  },
+  "description": "Hava durumu asistan\u0131 ba\u011flam\u0131 d\u0131\u015f\u0131 sorulara yan\u0131t vermesini engeller. Sadece hava, s\u0131cakl\u0131k, ya\u011f\u0131\u015f vb konularda cevap verir.",
+  "engine": "nemo",
+  "metadata_extra": null,
+  "name": "Hava Durumu Ba\u011flam\u0131 Filtresi",
+  "scope": "artefact",
+  "type": "input"
+}

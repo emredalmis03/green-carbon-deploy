@@ -1,0 +1,253 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788781594796-howlet_agent-1788781598861",
+        "source": "chat_input-1788781594796",
+        "target": "howlet_agent-1788781598861"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_agent-1788781598861-chat_output-1788781606545",
+        "source": "howlet_agent-1788781598861",
+        "target": "chat_output-1788781606545"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__file_input-1788782151363-howlet_agent-1788781598861",
+        "source": "file_input-1788782151363",
+        "target": "howlet_agent-1788781598861"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__prompt_template-1788782512804-howlet_agent-1788781598861instruction",
+        "source": "prompt_template-1788782512804",
+        "target": "howlet_agent-1788781598861",
+        "targetHandle": "instruction"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_kb-1788782649520-howlet_agent-1788781598861knowledge",
+        "source": "howlet_kb-1788782649520",
+        "target": "howlet_agent-1788781598861",
+        "targetHandle": "knowledge"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_tool-1788782668470-howlet_agent-1788781598861",
+        "source": "howlet_tool-1788782668470",
+        "target": "howlet_agent-1788781598861"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__structured_output-1788784170725-howlet_agent-1788781598861format",
+        "source": "structured_output-1788784170725",
+        "target": "howlet_agent-1788781598861",
+        "targetHandle": "format"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1788781594796",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 800,
+          "y": 380
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a07bbb-c984-74e6-a386-fd49ec701ed2",
+            "memory_mode": "inherit"
+          },
+          "description": "Run a saved Howlet agent (tools + KB + guardrails)",
+          "icon": "\ud83e\udd16",
+          "label": "kabul-ajan",
+          "resourceSummary": "single \u00b7 bedrock \u00b7 global.anthropic.claude-haiku-4-5-20251001-v1:0 \u00b7 0.7 \u00b7 2048"
+        },
+        "dragging": false,
+        "id": "howlet_agent-1788781598861",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 940,
+          "y": 380
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1788781606545",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1100,
+          "y": 400
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "file_input",
+          "config": {},
+          "description": "Upload a document/file into the flow",
+          "icon": "\ud83d\udcc1",
+          "label": "File Input"
+        },
+        "dragging": false,
+        "id": "file_input-1788782151363",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 800,
+          "y": 500
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "prompt_template",
+          "config": {
+            "template": "Yaln\u0131z T\u00fcrk\u00e7e ve en fazla iki c\u00fcmle ile cevap ver."
+          },
+          "description": "Build the prompt text - inline template or a saved prompt",
+          "icon": "\ud83d\udcdd",
+          "label": "Prompt"
+        },
+        "id": "prompt_template-1788782512804",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 920,
+          "y": 580
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_kb",
+          "config": {
+            "kb_id": "01a07adb-693b-77dc-9579-b0e91b6e3a29"
+          },
+          "description": "Retrieve relevant chunks from a DataHub KB (RAG)",
+          "icon": "\ud83d\udcda",
+          "label": "kabul-ozel-profiller",
+          "resourceSummary": "active \u00b7 1 \u00b7 5"
+        },
+        "dragging": false,
+        "id": "howlet_kb-1788782649520",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1040,
+          "y": 580
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_tool",
+          "config": {
+            "tool_id": "01a06711-5234-786d-9b3a-4ef584b2be4e"
+          },
+          "description": "Execute a custom or bundle tool",
+          "icon": "\ud83d\udd27",
+          "label": "qa-s2-oncelik-ad",
+          "resourceSummary": "python"
+        },
+        "dragging": false,
+        "id": "howlet_tool-1788782668470",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1160,
+          "y": 580
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "logic",
+          "componentType": "structured_output",
+          "config": {
+            "provider": "bedrock",
+            "schema_json": [
+              1,
+              2,
+              3
+            ]
+          },
+          "description": "Force upstream text into schema-valid JSON",
+          "icon": "\ud83e\udde9",
+          "label": "Structured Output"
+        },
+        "dragging": false,
+        "id": "structured_output-1788784170725",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 940,
+          "y": 280
+        },
+        "selected": true,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a07bb0-fa44-7440-8fc1-96be1182e7c5",
+  "metadata_extra": null,
+  "name": "kabul-fl-kosu",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 37,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

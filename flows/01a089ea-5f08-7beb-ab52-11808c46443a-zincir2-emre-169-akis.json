@@ -1,0 +1,88 @@
+{
+  "description": "169-Emre UI dogrulamasi icin olusturuldu",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e-chat_input_1-agent_1-0",
+        "source": "chat_input_1",
+        "target": "agent_1"
+      },
+      {
+        "animated": true,
+        "id": "e-agent_1-chat_output_1-1",
+        "source": "agent_1",
+        "target": "chat_output_1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "icon": "\ud83d\udcac",
+          "label": "Sohbet Girisi"
+        },
+        "id": "chat_input_1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 50,
+          "y": 150
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a089ea-2a01-7fc1-abef-6d59cad0a677",
+            "memory_mode": "inherit"
+          },
+          "icon": "\ud83e\udd16",
+          "label": "zincir2-emre-169-ajan",
+          "resourceSummary": "single \u00b7 bedrock \u00b7 global.anthropic.claude-haiku-4-5-20251001-v1:0 \u00b7 0.1 \u00b7 4096"
+        },
+        "id": "agent_1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 350,
+          "y": 150
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "icon": "\ud83d\udce4",
+          "label": "Sohbet Cikisi"
+        },
+        "id": "chat_output_1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 650,
+          "y": 150
+        },
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a089ea-5f08-7beb-ab52-11808c46443a",
+  "metadata_extra": null,
+  "name": "zincir2-emre-169-akis",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 4,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

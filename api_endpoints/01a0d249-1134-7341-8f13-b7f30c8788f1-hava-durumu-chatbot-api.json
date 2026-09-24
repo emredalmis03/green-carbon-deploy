@@ -1,0 +1,14 @@
+{
+  "auth_mode": "none",
+  "config": {
+    "run_as_user_id": "ac45b948-5ef9-42cc-bfc9-25120a5f44c4"
+  },
+  "description": "Howlet Studio'da olu\u015fturulan Hava Durumu Asistan\u0131 - Ankara, \u0130stanbul ve di\u011fer \u015fehirlerin hava durumunu \u00f6\u011fren AI chatbot",
+  "endpoint_type": "agent",
+  "metadata_extra": null,
+  "method": "POST",
+  "name": "Hava Durumu Chatbot API",
+  "rate_limit": null,
+  "resource_id": "01a0d235-4c86-745c-914e-f08602b6ac6c",
+  "slug": "hava-durumu-chatbot"
+}

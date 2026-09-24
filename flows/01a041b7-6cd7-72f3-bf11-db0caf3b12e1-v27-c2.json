@@ -1,0 +1,86 @@
+{
+  "description": "v27",
+  "flow_data": {
+    "edges": [
+      {
+        "id": "e1",
+        "source": "in",
+        "target": "c"
+      },
+      {
+        "id": "e2",
+        "source": "c",
+        "target": "out"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_input",
+          "config": {},
+          "icon": "*",
+          "label": "In"
+        },
+        "id": "in",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 400,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be",
+            "data_mode": "query",
+            "query": "select status, count(*) c from public.orders group by status order by 1"
+          },
+          "icon": "*",
+          "label": "conn"
+        },
+        "id": "c",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Out"
+        },
+        "id": "out",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 400
+        },
+        "type": "howletNode"
+      }
+    ]
+  },
+  "id": "01a041b7-6cd7-72f3-bf11-db0caf3b12e1",
+  "metadata_extra": null,
+  "name": "v27-C2",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

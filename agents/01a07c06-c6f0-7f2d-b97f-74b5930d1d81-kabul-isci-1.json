@@ -1,0 +1,51 @@
+{
+  "agent_type": "single",
+  "description": "\u0130\u015f\u00e7i",
+  "guardrail_ids": {
+    "execution_ids": [],
+    "input_ids": [],
+    "output_ids": [
+      "01a066bb-e0fa-7f8c-87fe-990538290cfe"
+    ]
+  },
+  "id": "01a07c06-c6f0-7f2d-b97f-74b5930d1d81",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": false,
+    "kb_ids": [
+      "01a0668c-96ca-7227-b837-9f9a8057c9f4"
+    ],
+    "retrieval_mode": "rag",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "kabul-isci-1",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 2,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

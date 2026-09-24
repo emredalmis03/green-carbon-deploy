@@ -1,0 +1,160 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__llm_bedrock-1787560278460-embeddings-1787560295982",
+        "source": "llm_bedrock-1787560278460",
+        "target": "embeddings-1787560295982"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__file_input-1787748936892-llm_bedrock-1787560278460",
+        "source": "file_input-1787748936892",
+        "target": "llm_bedrock-1787560278460"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__embeddings-1787560295982-chat_output-1787663949343",
+        "source": "embeddings-1787560295982",
+        "target": "chat_output-1787663949343"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1787749123238-file_input-1787748936892",
+        "source": "chat_input-1787749123238",
+        "target": "file_input-1787748936892"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1787749123238-llm_bedrock-1787560278460",
+        "source": "chat_input-1787749123238",
+        "target": "llm_bedrock-1787560278460"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "llm",
+          "componentType": "llm_bedrock",
+          "config": {
+            "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+          },
+          "description": "Call a model via AWS Bedrock",
+          "icon": "\ud83d\udfe0",
+          "label": "Claude Haiku 4.5",
+          "resourceSummary": ""
+        },
+        "dragging": false,
+        "id": "llm_bedrock-1787560278460",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 640,
+          "y": 380
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "rag",
+          "componentType": "embeddings",
+          "config": {
+            "dimensions": "model default",
+            "embedding_profile_id": "024091c4-844d-4c8f-b5ed-d126978cbfde"
+          },
+          "description": "Turn text into a vector (Bedrock Titan)",
+          "icon": "\ud83d\udcd0",
+          "label": "Default Bedrock Titan v2",
+          "resourceSummary": ""
+        },
+        "dragging": false,
+        "id": "embeddings-1787560295982",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 800,
+          "y": 380
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "id": "chat_output-1787663949343",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 980,
+          "y": 500
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "file_input",
+          "config": {},
+          "description": "Upload a document/file into the flow",
+          "icon": "\ud83d\udcc1",
+          "label": "File Input"
+        },
+        "dragging": false,
+        "id": "file_input-1787748936892",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 360,
+          "y": 540
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1787749123238",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 320,
+          "y": 340
+        },
+        "selected": false,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a032e4-a3dc-76f3-9d98-1338d568288c",
+  "metadata_extra": null,
+  "name": "tahaflow",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 45,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,142 @@
+{
+  "description": "control: two sinks, both healthy",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e1",
+        "source": "chat_input-1",
+        "target": "conn-a"
+      },
+      {
+        "animated": true,
+        "id": "e2",
+        "source": "chat_input-1",
+        "target": "conn-b"
+      },
+      {
+        "animated": true,
+        "id": "e3",
+        "source": "conn-a",
+        "target": "out-a"
+      },
+      {
+        "animated": true,
+        "id": "e4",
+        "source": "conn-b",
+        "target": "out-b"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_input",
+          "config": {},
+          "icon": "*",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 400,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be",
+            "data_mode": "query",
+            "query": "select status, count(*) c from public.orders group by status order by 1"
+          },
+          "icon": "*",
+          "label": "A"
+        },
+        "id": "conn-a",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 300
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be",
+            "data_mode": "query",
+            "query": "select status, count(*) c from public.orders group by status order by 1"
+          },
+          "icon": "*",
+          "label": "B"
+        },
+        "id": "conn-b",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 520
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Out A"
+        },
+        "id": "out-a",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 300
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Out B"
+        },
+        "id": "out-b",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 520
+        },
+        "type": "howletNode"
+      }
+    ]
+  },
+  "id": "01a03eb7-2b90-722e-914c-b57e260003a2",
+  "metadata_extra": null,
+  "name": "live-two-sinks-control-0826",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

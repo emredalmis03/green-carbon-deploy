@@ -1,0 +1,171 @@
+{
+  "created_by_name": "",
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_agent-1789995836997-chat_output-1789995834939",
+        "source": "howlet_agent-1789995836997",
+        "target": "chat_output-1789995834939"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_tool-1789995843781-howlet_agent-1789995836997",
+        "source": "howlet_tool-1789995843781",
+        "target": "howlet_agent-1789995836997"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_guardrail-1789995841265-howlet_agent-1789995836997",
+        "source": "howlet_guardrail-1789995841265",
+        "target": "howlet_agent-1789995836997"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1789995834939",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 640,
+          "y": 360
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a0c409-6b3f-7b49-8fd2-332063d7e564",
+            "memory_mode": "inherit"
+          },
+          "description": "Run a saved Howlet agent (tools + KB + guardrails)",
+          "icon": "\ud83e\udd16",
+          "label": "PRJ-01_Agent_EcoBudgetAssistant",
+          "resourceSummary": "single \u00b7 bedrock \u00b7 global.anthropic.claude-haiku-4-5-20251001-v1:0 \u00b7 0.7 \u00b7 2048"
+        },
+        "dragging": false,
+        "id": "howlet_agent-1789995836997",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 520,
+          "y": 380
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_guardrail",
+          "config": {},
+          "description": "Check / redact with Howlet Guard (policy or PII)",
+          "icon": "\ud83d\udee1\ufe0f",
+          "label": "Guardrail"
+        },
+        "dragging": false,
+        "id": "howlet_guardrail-1789995841265",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 500,
+          "y": 240
+        },
+        "selected": true,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_tool",
+          "config": {},
+          "description": "Execute a custom or bundle tool",
+          "icon": "\ud83d\udd27",
+          "label": "Tool"
+        },
+        "dragging": false,
+        "id": "howlet_tool-1789995843781",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 460,
+          "y": 460
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "dragging": false,
+        "id": "chat_input-1790154141945",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 180,
+          "y": 360
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "file_input",
+          "config": {},
+          "description": "Upload a document/file into the flow",
+          "icon": "\ud83d\udcc1",
+          "label": "File Input"
+        },
+        "dragging": false,
+        "id": "file_input-1790154144757",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 300,
+          "y": 440
+        },
+        "selected": false,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a0c410-ac70-7115-98b0-cffbb9a137b1",
+  "metadata_extra": null,
+  "name": "PRJ-01_Flow_MainPipeline",
+  "project_id": "1ba46ca9-9eac-4dcf-862d-7919cc243cae",
+  "version": 32,
+  "version_id": "d944be00-07d2-4392-8a38-c359fa2480a0"
+}

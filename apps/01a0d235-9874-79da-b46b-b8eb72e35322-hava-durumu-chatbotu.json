@@ -1,0 +1,31 @@
+{
+  "app_type": "chat",
+  "code": "import streamlit as st\n\nst.set_page_config(page_title=\"My App\", page_icon=\"\ud83e\udd89\", layout=\"wide\")\nst.title(\"\ud83e\udd89 My Howlet App\")\nst.write(\"Start building your app here.\")\n",
+  "description": null,
+  "id": "01a0d235-9874-79da-b46b-b8eb72e35322",
+  "is_active": true,
+  "metadata_extra": {
+    "binding": {
+      "agent_description": null,
+      "agent_icon": null,
+      "agent_id": "01a0d235-4c86-745c-914e-f08602b6ac6c",
+      "agent_name": null,
+      "flow_id": null,
+      "flow_name": null,
+      "kb_id": null,
+      "kb_name": null,
+      "template": null
+    }
+  },
+  "name": "Hava Durumu Chatbotu",
+  "pid": null,
+  "port": null,
+  "project_id": "1ba46ca9-9eac-4dcf-862d-7919cc243cae",
+  "published": false,
+  "published_slug": null,
+  "requirements_txt": null,
+  "status": "draft",
+  "template": null,
+  "version": 1,
+  "version_id": null
+}

@@ -1,0 +1,32 @@
+{
+  "agent_type": "single",
+  "description": "PVI-FAZE-E2E-2026-08-18",
+  "guardrail_ids": null,
+  "id": "01a014ed-276b-7f6d-8fac-a72e02d84536",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": "http://hwl-ep-bad884e9-051eb0db-qwen3-predictor.howlet-tenant-acme.svc.cluster.local/v1",
+  "model_card_id": "01a00a6b-74f0-7914-b34c-9ca233b6ec22",
+  "model_name": "vllm:model",
+  "model_provider": "vllm",
+  "multi_agent_config": null,
+  "name": "PVI-FAZE-E2E-2026-08-18 tcmb-finansal-istihbarat agent",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "Kullan\u0131c\u0131 sorarsa e\u011fer arka planda hangi modeli kulland\u0131\u011f\u0131n\u0131 s\u00f6yleyebilirsin.",
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 5,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

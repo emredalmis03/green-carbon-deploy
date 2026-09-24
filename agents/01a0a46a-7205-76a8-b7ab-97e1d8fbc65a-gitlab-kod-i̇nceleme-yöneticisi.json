@@ -1,0 +1,14 @@
+{
+  "agent_type": "single",
+  "description": "GitLab kod inceleme isteklerini y\u00f6nlendiren ve koordine eden supervisor agent",
+  "guardrail_ids": null,
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "metadata_extra": null,
+  "model_name": "global.amazon.nova-2-lite-v1:0",
+  "model_provider": "bedrock",
+  "name": "GitLab Kod \u0130nceleme Y\u00f6neticisi",
+  "system_prompt": "Sen GitLab kod inceleme taleplerini y\u00f6nlendiren bir supervisor'sun. \nKullan\u0131c\u0131n\u0131n iste\u011fine g\u00f6re:\n- E\u011fer Merge Request incelemesi istiyorsa: Code Review Uzman\u0131'na y\u00f6nlendir\n- E\u011fer commit analizi ve ge\u00e7mi\u015f istiyorsa: Git Historian'a y\u00f6nlendir\n- E\u011fer hem code review hem git analizi gerekiyorsa: Her ikisini de kullan\n\nHer sorguya uygun agent'lar\u0131 se\u00e7 ve koordine et.",
+  "temperature": 0.7,
+  "tools_config": null
+}

@@ -1,0 +1,72 @@
+{
+  "description": "Demo: S3 baglantisindan canli nesne listeleme",
+  "flow_data": {
+    "edges": [
+      {
+        "id": "e1",
+        "source": "chat_input-1",
+        "target": "conn-1"
+      },
+      {
+        "id": "e2",
+        "source": "conn-1",
+        "target": "chat_output-1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1",
+        "position": {
+          "x": 540,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a037d4-7c90-793c-9fb6-c573a2b5de61",
+            "data_mode": "objects",
+            "prefix": "raporlar/"
+          },
+          "label": "howlet-s3"
+        },
+        "id": "conn-1",
+        "position": {
+          "x": 660,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "label": "Chat Output"
+        },
+        "id": "chat_output-1",
+        "position": {
+          "x": 800,
+          "y": 400
+        },
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a03a40-ca6e-7009-b2ad-1c40de48b7dc",
+  "metadata_extra": null,
+  "name": "demo-s3-flow",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

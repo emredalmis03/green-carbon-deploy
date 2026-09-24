@@ -1,0 +1,142 @@
+{
+  "description": "one connector fails, the rest must still run",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e1",
+        "source": "chat_input-1",
+        "target": "conn-bad"
+      },
+      {
+        "animated": true,
+        "id": "e2",
+        "source": "chat_input-1",
+        "target": "conn-ok"
+      },
+      {
+        "animated": true,
+        "id": "e3",
+        "source": "conn-bad",
+        "target": "out-bad"
+      },
+      {
+        "animated": true,
+        "id": "e4",
+        "source": "conn-ok",
+        "target": "out-ok"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_input",
+          "config": {},
+          "icon": "*",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 400,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be",
+            "data_mode": "query",
+            "query": "select * from public.yok_boyle_tablo"
+          },
+          "icon": "*",
+          "label": "BOZUK sorgu"
+        },
+        "id": "conn-bad",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 300
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be",
+            "data_mode": "query",
+            "query": "select status, count(*) c from public.orders group by status order by 1"
+          },
+          "icon": "*",
+          "label": "SAGLAM sorgu"
+        },
+        "id": "conn-ok",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 520
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Out A"
+        },
+        "id": "out-bad",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 300
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Out B"
+        },
+        "id": "out-ok",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 520
+        },
+        "type": "howletNode"
+      }
+    ]
+  },
+  "id": "01a03eb6-6b41-7c38-9025-956ff6e39b68",
+  "metadata_extra": null,
+  "name": "live-conn-error-containment-0826",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

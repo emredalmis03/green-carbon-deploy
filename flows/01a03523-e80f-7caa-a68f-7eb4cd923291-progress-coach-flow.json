@@ -1,0 +1,201 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1787597947422-howlet_guardrail-1787597952538",
+        "source": "chat_input-1787597947422",
+        "target": "howlet_guardrail-1787597952538"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_guardrail-1787597952538-howlet_kb-1787597955687",
+        "source": "howlet_guardrail-1787597952538",
+        "target": "howlet_kb-1787597955687"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_guardrail-1787597952538-prompt_template-1787597965903",
+        "source": "howlet_guardrail-1787597952538",
+        "target": "prompt_template-1787597965903"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_kb-1787597955687-prompt_template-1787597965903",
+        "source": "howlet_kb-1787597955687",
+        "target": "prompt_template-1787597965903"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_tool-1787597962938-prompt_template-1787597965903",
+        "source": "howlet_tool-1787597962938",
+        "target": "prompt_template-1787597965903"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_guardrail-1787597952538-howlet_tool-1787597962938",
+        "source": "howlet_guardrail-1787597952538",
+        "target": "howlet_tool-1787597962938"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__prompt_template-1787597965903-chat_output-1787597974655",
+        "source": "prompt_template-1787597965903",
+        "target": "chat_output-1787597974655"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "dragging": false,
+        "id": "chat_input-1787597947422",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 80,
+          "y": 500
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_guardrail",
+          "config": {
+            "guardrail_id": "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+          },
+          "description": "Check / redact with Howlet Guard (policy or PII)",
+          "icon": "\ud83d\udee1\ufe0f",
+          "label": "coaching-scope-guardrail",
+          "resourceSummary": "nemo"
+        },
+        "dragging": false,
+        "id": "howlet_guardrail-1787597952538",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 260,
+          "y": 500
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_kb",
+          "config": {
+            "kb_id": "01a03528-42cf-7098-9f05-7934c00548b9"
+          },
+          "description": "Retrieve relevant chunks from a DataHub KB (RAG)",
+          "icon": "\ud83d\udcda",
+          "label": "coaching-kb",
+          "resourceSummary": "active \u00b7 7 \u00b7 117"
+        },
+        "dragging": false,
+        "id": "howlet_kb-1787597955687",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 440,
+          "y": 640
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_tool",
+          "config": {
+            "tool_id": "01a03516-1131-7c29-b912-729c71b04483"
+          },
+          "description": "Execute a custom or bundle tool",
+          "icon": "\ud83d\udd27",
+          "label": "GetProgressHistory",
+          "resourceSummary": "python"
+        },
+        "dragging": false,
+        "id": "howlet_tool-1787597962938",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 460,
+          "y": 380
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "prompt_template",
+          "config": {
+            "template": "  You are an improvement coach. Using the coaching material and the user's\n  progress history below, give specific, actionable advice grounded in their\n  real data. Don't do the work for them.\n\n  User question: {input}\n  Coaching material: {knowledge}\n  Progress history: {history}"
+          },
+          "description": "Build the prompt text - inline template or a saved prompt",
+          "icon": "\ud83d\udcdd",
+          "label": "Prompt"
+        },
+        "dragging": false,
+        "id": "prompt_template-1787597965903",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 640,
+          "y": 460
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1787597974655",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 980,
+          "y": 500
+        },
+        "selected": false,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a03523-e80f-7caa-a68f-7eb4cd923291",
+  "metadata_extra": null,
+  "name": "progress-coach-flow",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 76,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

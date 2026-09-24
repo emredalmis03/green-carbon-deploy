@@ -1,0 +1,11 @@
+{
+  "checksum_sha256": "3af5bccec2c37d9f99d034fec7ac818729a462247b938b88516186051258a833",
+  "content_type": "text/csv",
+  "current_version_id": "5e310305-c966-4940-a65e-28254c5ddb3d",
+  "environment_id": "f4a01b8f-8b63-4ede-82d1-d57bfd6c34ff",
+  "name": "netflix-movies-annotated.csv",
+  "object_key": "t/0b5f56e2-23fb-4fac-b043-501e1b9ddf29/p/1ba46ca9-9eac-4dcf-862d-7919cc243cae/o/e43c322b-2e00-4296-9e5b-829e015bb52c",
+  "path": "/heyhey/netflix-movies-annotated.csv",
+  "project_id": "1ba46ca9-9eac-4dcf-862d-7919cc243cae",
+  "size_bytes": 3514217
+}

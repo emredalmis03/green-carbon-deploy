@@ -1,0 +1,36 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a03344-d74f-7f9f-bbd8-b60d8230cf8f",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "search worker",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "Sana verilen konuyu k\u0131saca analiz et ve \u00f6zet bilgi d\u00f6n.",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a0249a-42c0-7511-82ef-2747fc659778"
+    ]
+  },
+  "version": 2,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

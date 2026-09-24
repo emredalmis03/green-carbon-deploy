@@ -1,0 +1,46 @@
+{
+  "agent_type": "single",
+  "description": "Created from the SDK",
+  "guardrail_ids": {
+    "execution_ids": [],
+    "input_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ],
+    "output_ids": []
+  },
+  "id": "01a0570a-7bf0-7147-8212-d41eb505cb9e",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": true,
+    "kb_ids": [
+      "01a03528-42cf-7098-9f05-7934c00548b9"
+    ],
+    "retrieval_mode": "tool",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 4096,
+  "memory_config": null,
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": null,
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "sdk2",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

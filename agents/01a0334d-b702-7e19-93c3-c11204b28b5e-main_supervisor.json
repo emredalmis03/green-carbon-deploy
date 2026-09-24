@@ -1,0 +1,32 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a0334d-b702-7e19-93c3-c11204b28b5e",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "main_supervisor",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "Kullan\u0131c\u0131dan gelen iste\u011fi \u00f6nce 'research_supervisor' ekibine g\u00f6nder. Oradan yan\u0131t d\u00f6n\u00fcnce sonucu 'summary_supervisor' ekibine aktar\u0131p nihai cevab\u0131 \u00fcret.",
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 5,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

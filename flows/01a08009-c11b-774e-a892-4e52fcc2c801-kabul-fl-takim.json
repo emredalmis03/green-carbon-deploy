@@ -1,0 +1,148 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788854578039-howlet_multi_agent-1788854609637",
+        "source": "chat_input-1788854578039",
+        "target": "howlet_multi_agent-1788854609637"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_multi_agent-1788854609637-chat_output-1788854629689",
+        "source": "howlet_multi_agent-1788854609637",
+        "target": "chat_output-1788854629689"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__prompt_template-1788854639654-howlet_multi_agent-1788854609637",
+        "selected": false,
+        "source": "prompt_template-1788854639654",
+        "target": "howlet_multi_agent-1788854609637"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "dragging": false,
+        "id": "chat_input-1788854578039",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 540,
+          "y": 320
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_multi_agent",
+          "config": {
+            "memory_mode": "inherit",
+            "multi_agent_id": "01a07c08-1f52-70f5-ad3f-c534a31e894e"
+          },
+          "description": "Run a multi-agent team",
+          "icon": "\ud83c\udf9b",
+          "label": "kabul-takim",
+          "resourceSummary": "parallel"
+        },
+        "dragging": false,
+        "id": "howlet_multi_agent-1788854609637",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 700,
+          "y": 340
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1788854629689",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 880,
+          "y": 380
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "prompt_template",
+          "config": {},
+          "description": "Build the prompt text - inline template or a saved prompt",
+          "icon": "\ud83d\udcdd",
+          "label": "Prompt"
+        },
+        "dragging": false,
+        "id": "prompt_template-1788854639654",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 640,
+          "y": 520
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {},
+          "description": "Bind a workspace connection and pull live data - statically or straight from the flow input",
+          "icon": "\ud83d\udd0c",
+          "label": "Connection"
+        },
+        "id": "howlet_connector-1788868607410",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1040,
+          "y": 460
+        },
+        "selected": true,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a08009-c11b-774e-a892-4e52fcc2c801",
+  "metadata_extra": null,
+  "name": "kabul-fl-takim",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 12,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,36 @@
+{
+  "agent_type": "single",
+  "created_by_name": "",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a08f2e-7758-7f79-a0cd-1ce6c236cbf5",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": true,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_card_id": "01a09197-a2fc-7e2b-97f5-cf9e2d3e7383",
+  "model_name": "vllm:model",
+  "model_provider": "vllm",
+  "multi_agent_config": null,
+  "name": "tahaajan",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a09ead-29aa-798c-86cb-eb4e45a66474"
+    ]
+  },
+  "version": 7,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

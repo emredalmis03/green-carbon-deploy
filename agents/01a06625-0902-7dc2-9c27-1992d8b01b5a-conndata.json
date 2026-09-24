@@ -1,0 +1,36 @@
+{
+  "agent_type": "single",
+  "description": "Ba\u011fl\u0131 PostgreSQL veritaban\u0131nda SQL sorgusu \u00e7al\u0131\u015ft\u0131r\u0131r. Kullan\u0131c\u0131 veritaban\u0131ndaki verileri sorgulamak, tablo listelemek veya veri aramak istedi\u011finde bu toolu kullan. \"tables\" g\u00f6nderirsen mevcut tablolar\u0131 listeler, SQL sorgusu g\u00f6nderirsen sonu\u00e7lar\u0131 d\u00f6nd\u00fcr\u00fcr.",
+  "guardrail_ids": null,
+  "id": "01a06625-0902-7dc2-9c27-1992d8b01b5a",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "conndata",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a05d28-ab7d-7122-9a31-554b0d61c073"
+    ]
+  },
+  "version": 4,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

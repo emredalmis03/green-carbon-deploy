@@ -1,0 +1,41 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": {
+    "execution_ids": [],
+    "input_ids": [
+      "01a08608-bc75-7db5-92e3-0a8125387d1a"
+    ],
+    "output_ids": []
+  },
+  "id": "01a085ee-c706-7bcb-ad5f-b9bc60371dbe",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": "01a08605-692a-7937-bab6-55d831994460",
+    "top_p": 0.95
+  },
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "owl-<taha>-arastirmaci",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "her cevab\u0131n sonuna tam olarak KOD-ALFA yaz.",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a07bb3-c8a9-75c1-a6be-c7d14e7de701"
+    ]
+  },
+  "version": 4,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,59 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "source": "chat_input_node",
+        "target": "agent_node"
+      },
+      {
+        "source": "agent_node",
+        "target": "chat_output_node"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "componentType": "chat_input",
+          "label": "Sohbet Giri\u015fi"
+        },
+        "id": "chat_input_node",
+        "position": {
+          "x": 100.0,
+          "y": 200.0
+        }
+      },
+      {
+        "data": {
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a08641-ccfa-7418-b650-3a03739ea9a6"
+          },
+          "label": "T\u00fcrkiye Bilgi Ajan\u0131"
+        },
+        "id": "agent_node",
+        "position": {
+          "x": 350.0,
+          "y": 200.0
+        }
+      },
+      {
+        "data": {
+          "componentType": "chat_output",
+          "label": "Sohbet \u00c7\u0131k\u0131\u015f\u0131"
+        },
+        "id": "chat_output_node",
+        "position": {
+          "x": 600.0,
+          "y": 200.0
+        }
+      }
+    ]
+  },
+  "id": "01a08641-d579-7e5e-ad9d-ccc70fdaca0c",
+  "metadata_extra": null,
+  "name": "T\u00fcrkiye Ba\u015fkenti Sohbeti",
+  "project_id": "d223e10e-8d12-4a54-943e-b282efe4bf10",
+  "version": 6,
+  "version_id": "ce876045-79b0-47ba-afd4-cf096d89940b"
+}

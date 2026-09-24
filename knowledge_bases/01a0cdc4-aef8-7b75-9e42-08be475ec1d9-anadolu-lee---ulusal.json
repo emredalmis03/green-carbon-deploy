@@ -1,0 +1,54 @@
+{
+  "chunking_profile_id": "${ref:chunking_profile:Default Structure}",
+  "confidence_threshold": 0.2,
+  "description": "",
+  "document_manifest": [
+    {
+      "content_sha256": "274fe9f8b282db46c41aa4ee520ce3091cb06e2015027fb3d0267b658f796696",
+      "document_id": "e1f8605b-2449-4e08-929b-0bf21b93b24e",
+      "filename": "Anadolu U\u0308niversitesi Lisansu\u0308stu\u0308 Eg\u0306itim Enstitu\u0308su\u0308 Lisansu\u0308stu\u0308 Programlarda Ders Yu\u0308ku\u0308 ve Tez Dan\u0131s\u0327manl\u0131g\u0306\u0131na I\u0307lis\u0327kin Uygulama Usul ve Esaslar\u0131.pdf"
+    },
+    {
+      "content_sha256": "92e098d2625b005d2d21b462901ed64aa2f994b0014cd9a498935ebf1f88abe3",
+      "document_id": "ce535cfc-c5bc-4bf5-94b8-c1cfa4bf4956",
+      "filename": "O\u0308G\u0306RENCI\u0307 I\u0307S\u0327 AKIS\u0327 SU\u0308RECI\u0307.pdf"
+    }
+  ],
+  "document_manifest_total": 2,
+  "document_manifest_truncated": false,
+  "embedding_profile_id": "${ref:embedding_profile:Default Bedrock Titan v2}",
+  "id": "01a0cdc4-aef8-7b75-9e42-08be475ec1d9",
+  "index_profile_id": "${ref:index_profile:Default pgvector}",
+  "index_signature": null,
+  "indexed_origin_hash": "3222a52cb2aa2de183715e911b6320f5445dd09640abd9e399495ae04e3922d9",
+  "kb_digest": "82e7ec9104ad2e3692531cc095ae2dc950aea979d3dd1a9c8ba5d7807bea46bf",
+  "kb_digest_complete": true,
+  "kb_digest_profiles_pinned": true,
+  "name": "Anadolu LEE - Ulusal",
+  "parser_forbid_external": false,
+  "parser_mode": "docling",
+  "parser_model": null,
+  "parser_model_base_url": null,
+  "parser_model_card_id": null,
+  "parser_profile_id": "${ref:parser_profile:Default LLM parser}",
+  "parser_prompt": null,
+  "parser_provider": null,
+  "pii_config": {},
+  "pii_profile_id": "${ref:pii_profile:Default Hash (Turkish identifiers)}",
+  "profile_pins": {
+    "chunking": "08fb8bf5-59be-46f7-a873-cbebc6488097",
+    "embedding": "3ce02127-d579-48fb-84d2-fff8d2683d2c",
+    "index": "e37e1493-0482-4346-a8eb-904dd0a2fd96",
+    "names": {
+      "chunking": "Default Structure",
+      "embedding": "Default Bedrock Titan v2",
+      "index": "Default pgvector",
+      "parser": "Default LLM parser",
+      "pii": "Default Hash (Turkish identifiers)"
+    },
+    "parser": "c4a3cc92-7826-48e6-9804-c5f8e4feb29b",
+    "parser_mode": "docling",
+    "parser_model": null,
+    "pii": "5602da55-d80f-4618-96ad-eb2deda41cc4"
+  }
+}

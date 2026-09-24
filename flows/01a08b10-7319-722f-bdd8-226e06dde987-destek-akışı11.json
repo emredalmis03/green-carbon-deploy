@@ -1,0 +1,113 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e-chat_input_node-agent_node-0",
+        "source": "chat_input_node",
+        "target": "agent_node"
+      },
+      {
+        "animated": true,
+        "id": "e-agent_node-chat_output_node-1",
+        "source": "agent_node",
+        "target": "chat_output_node"
+      },
+      {
+        "animated": true,
+        "id": "e-guardrail_node-agent_node-2",
+        "source": "guardrail_node",
+        "target": "agent_node",
+        "targetHandle": "guardrail"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "icon": "\ud83d\udcac",
+          "label": "Sohbet Giri\u015fi"
+        },
+        "id": "chat_input_node",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 50,
+          "y": 100
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "icon": "\ud83d\udce4",
+          "label": "Sohbet \u00c7\u0131k\u0131\u015f\u0131"
+        },
+        "id": "chat_output_node",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 650,
+          "y": 100
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a07acf-8496-7b39-94cb-dac83bcac881"
+          },
+          "icon": "\ud83e\udd16",
+          "label": "Destek Ajan\u0131"
+        },
+        "id": "agent_node",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 350,
+          "y": 100
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "guardrail",
+          "componentType": "howlet_guardrail",
+          "config": {
+            "guardrail_id": "01a066bb-e0fa-7f8c-87fe-990538290cfe"
+          },
+          "icon": "\ud83d\udee1\ufe0f",
+          "label": "Koruma"
+        },
+        "id": "guardrail_node",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 350,
+          "y": 250
+        },
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a08b10-7319-722f-bdd8-226e06dde987",
+  "metadata_extra": null,
+  "name": "Destek Ak\u0131\u015f\u013111",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 9,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

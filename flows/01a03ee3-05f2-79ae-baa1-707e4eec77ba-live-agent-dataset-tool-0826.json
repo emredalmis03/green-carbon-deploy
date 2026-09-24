@@ -1,0 +1,113 @@
+{
+  "description": "agent + dataset node analytics tool",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e1",
+        "source": "chat_input-1",
+        "target": "agent-1"
+      },
+      {
+        "animated": true,
+        "id": "e2",
+        "source": "ds-1",
+        "target": "agent-1"
+      },
+      {
+        "animated": true,
+        "id": "e3",
+        "source": "agent-1",
+        "target": "chat_output-1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_input",
+          "config": {},
+          "icon": "*",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 400,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a03eb2-8142-7c5c-8ce8-048ea3a5ac72"
+          },
+          "icon": "*",
+          "label": "Query Agent"
+        },
+        "id": "agent-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_dataset",
+          "config": {
+            "dataset_id": "c956ba26-1e50-4d4a-8af4-265492b292c5"
+          },
+          "icon": "*",
+          "label": "live-ds-s3-single-0826"
+        },
+        "id": "ds-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 600
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Chat Output"
+        },
+        "id": "chat_output-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 400
+        },
+        "type": "howletNode"
+      }
+    ]
+  },
+  "id": "01a03ee3-05f2-79ae-baa1-707e4eec77ba",
+  "metadata_extra": null,
+  "name": "live-agent-dataset-tool-0826",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,59 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "source": "chat_input_1",
+        "target": "agent_1"
+      },
+      {
+        "source": "agent_1",
+        "target": "chat_output_1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "componentType": "chat_input",
+          "label": "Sohbet Giri\u015fi"
+        },
+        "id": "chat_input_1",
+        "position": {
+          "x": 50.0,
+          "y": 150.0
+        }
+      },
+      {
+        "data": {
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a085ee-c706-7bcb-ad5f-b9bc60371dbe"
+          },
+          "label": "owl-arastirmaci"
+        },
+        "id": "agent_1",
+        "position": {
+          "x": 350.0,
+          "y": 150.0
+        }
+      },
+      {
+        "data": {
+          "componentType": "chat_output",
+          "label": "Sohbet \u00c7\u0131k\u0131\u015f\u0131"
+        },
+        "id": "chat_output_1",
+        "position": {
+          "x": 650.0,
+          "y": 150.0
+        }
+      }
+    ]
+  },
+  "id": "01a08612-65e8-74fa-ac7b-dbb138a5a01a",
+  "metadata_extra": null,
+  "name": "owl-destek-akisi",
+  "project_id": "d223e10e-8d12-4a54-943e-b282efe4bf10",
+  "version": 6,
+  "version_id": "ce876045-79b0-47ba-afd4-cf096d89940b"
+}

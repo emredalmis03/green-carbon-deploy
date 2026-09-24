@@ -1,0 +1,42 @@
+{
+  "agent_type": "single",
+  "description": "testing event bus",
+  "guardrail_ids": {
+    "execution_ids": [],
+    "input_ids": [
+      "01a0187f-76d0-7c42-82cf-3dc387510675"
+    ],
+    "output_ids": []
+  },
+  "id": "01a032db-7647-7611-b0d3-b89ce490a2af",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 3501,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.7
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "qwen.qwen3-235b-a22b-2507-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "eventbus-agent",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.6,
+  "tools_config": {
+    "tool_ids": [
+      "01a02482-e396-76a0-a3b7-17b594fbe82b"
+    ]
+  },
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,60 @@
+{
+  "agent_type": "single",
+  "description": "deneme-aciklama",
+  "guardrail_ids": {
+    "execution_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c",
+      "01a0187f-76d0-7c42-82cf-3dc387510675"
+    ],
+    "input_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ],
+    "output_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ]
+  },
+  "id": "01a05be4-057b-716f-8f1d-07438e6580c0",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": true,
+    "kb_ids": [
+      "01a02478-86db-7c64-9cdb-f95955fd8ea4"
+    ],
+    "retrieval_mode": "agentic",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "FatmasAgent",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "deneme-talimat",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a04783-d485-7754-aa17-d8ec935fb49d"
+    ]
+  },
+  "version": 3,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

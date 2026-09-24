@@ -1,0 +1,60 @@
+{
+  "agent_type": "single",
+  "description": "ProgressCoachAgent",
+  "guardrail_ids": {
+    "execution_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ],
+    "input_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ],
+    "output_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ]
+  },
+  "id": "01a0375e-0e69-70d4-b8ee-e8e1cd9d1f63",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": true,
+    "kb_ids": [
+      "01a03528-42cf-7098-9f05-7934c00548b9"
+    ],
+    "retrieval_mode": "tool",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": true,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "TahaAgent1",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "You are a progress-tracking coach. You help users improve by recording their practice and progress over time and giving advice grounded in their actual history.\n\nYou have tools available. Use them:\n- When the user reports doing an activity or making progress, log it using the logging tool.\n- When the user asks about their progress, trends, or history, retrieve their records using the history tool before answering.\n- Base your coaching on the real data you retrieve, not assumptions. If you haven't retrieved their history yet and it's relevant, do so first.\n\nGive specific, actionable improvement advice. Be honest and supportive. Don't do the user's work for them \u2014 coach them to do it themselves.\n\nFor domains needing licensed expertise (medical, legal, financial, mental health), give general guidance and note the limits.",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a0337e-8ed5-7b5d-8f65-a0836ff17673",
+      "01a03510-ba75-7c1c-a1f7-c0950accd8d2"
+    ]
+  },
+  "version": 11,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,34 @@
+{
+  "agent_type": "single",
+  "description": "169-Emre UI dogrulamasi icin olusturuldu",
+  "guardrail_ids": {
+    "input_ids": [
+      "01a089ea-24f1-7de0-ba93-6ab23a5003ac"
+    ]
+  },
+  "id": "01a089ea-2a01-7fc1-abef-6d59cad0a677",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "memory_config": null,
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": null,
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "zincir2-emre-169-ajan",
+  "project_id": null,
+  "system_prompt": "Kisa ve Turkce yanit ver.",
+  "temperature": 0.1,
+  "tools_config": {
+    "tool_ids": [
+      "01a08656-7791-706f-9d1d-266bea0353e7"
+    ]
+  },
+  "version": 8,
+  "version_id": null
+}

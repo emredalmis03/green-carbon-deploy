@@ -1,0 +1,32 @@
+{
+  "agent_type": "single",
+  "description": "168-Emre UI dogrulamasi icin olusturuldu",
+  "guardrail_ids": null,
+  "id": "01a089d9-e82a-720e-9ef1-26e7fdb89db0",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "memory_config": null,
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "system_prompt_ref": "01a089d9-aa06-7af0-b631-d83d2c0e8294"
+  },
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "zincir2-emre-168-ajan",
+  "project_id": null,
+  "system_prompt": null,
+  "temperature": 0.2,
+  "tools_config": {
+    "tool_ids": [
+      "01a08656-7791-706f-9d1d-266bea0353e7"
+    ]
+  },
+  "version": 8,
+  "version_id": null
+}

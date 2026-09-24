@@ -1,0 +1,80 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "source": "in",
+        "target": "agent"
+      },
+      {
+        "source": "rail",
+        "target": "agent",
+        "targetHandle": "guardrail"
+      },
+      {
+        "source": "agent",
+        "target": "out"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "componentType": "chat_input",
+          "config": {},
+          "label": "Sohbet Girisi"
+        },
+        "id": "in",
+        "position": {
+          "x": 0,
+          "y": 100
+        }
+      },
+      {
+        "data": {
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a07c00-7edb-75d7-b5ed-cb5a4272c4b1"
+          },
+          "label": "Destek Ajani"
+        },
+        "id": "agent",
+        "position": {
+          "x": 300,
+          "y": 100
+        }
+      },
+      {
+        "data": {
+          "componentType": "howlet_guardrail",
+          "config": {
+            "guardrail_id": "01a07c26-a3de-77a0-b7df-16bb4576af1c"
+          },
+          "label": "Konu Disi"
+        },
+        "id": "rail",
+        "position": {
+          "x": 300,
+          "y": 300
+        }
+      },
+      {
+        "data": {
+          "componentType": "chat_output",
+          "config": {},
+          "label": "Sohbet Cikisi"
+        },
+        "id": "out",
+        "position": {
+          "x": 600,
+          "y": 100
+        }
+      }
+    ]
+  },
+  "id": "01a07c26-e0d9-79a2-9fb7-1e016e712cba",
+  "metadata_extra": null,
+  "name": "zincir-emre-destek-akisi",
+  "project_id": null,
+  "version": 1,
+  "version_id": null
+}

@@ -1,0 +1,67 @@
+{
+  "created_by_name": "",
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788781373513-chat_output-1788781386729",
+        "source": "chat_input-1788781373513",
+        "target": "chat_output-1788781386729"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "dragging": false,
+        "id": "chat_input-1788781373513",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 700,
+          "y": 180
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1788781386729",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 980,
+          "y": 180
+        },
+        "selected": false,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a07bac-b461-7793-a326-57bd250895a6",
+  "metadata_extra": null,
+  "name": "kabul-fl-temel",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 16,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

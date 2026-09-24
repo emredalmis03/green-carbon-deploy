@@ -1,0 +1,88 @@
+{
+  "description": "live SQL / query",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e1",
+        "source": "chat_input-1",
+        "target": "conn-1"
+      },
+      {
+        "animated": true,
+        "id": "e2",
+        "source": "conn-1",
+        "target": "chat_output-1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "icon": "*",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 540,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a039ea-4a04-78e9-adc0-1fdd845b77be",
+            "data_mode": "query",
+            "query": "select order_id, amount from public.orders order by order_id limit 3"
+          },
+          "icon": "*",
+          "label": "demo-testbed-postgres"
+        },
+        "id": "conn-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 660,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Chat Output"
+        },
+        "id": "chat_output-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 800,
+          "y": 400
+        },
+        "type": "howletNode"
+      }
+    ]
+  },
+  "id": "01a03e24-19de-7bc6-b220-16ef092ce3db",
+  "metadata_extra": null,
+  "name": "live-flow-pg-query",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

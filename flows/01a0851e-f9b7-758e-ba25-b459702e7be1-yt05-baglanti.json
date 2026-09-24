@@ -1,0 +1,41 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [],
+    "nodes": [
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a03d95-42c9-79e0-8b40-7bc923b77d4c",
+            "data_mode": "table",
+            "table": "public.customers"
+          },
+          "description": "Bind a workspace connection and pull live data - statically or straight from the flow input",
+          "icon": "\ud83d\udd0c",
+          "label": "live-0826-postgresql",
+          "resourceSummary": ""
+        },
+        "id": "howlet_connector-1788939805987",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 800,
+          "y": 380
+        },
+        "selected": true,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a0851e-f9b7-758e-ba25-b459702e7be1",
+  "metadata_extra": null,
+  "name": "yt05-baglanti",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 6,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,146 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788437797511-howlet_agent-1788437801393",
+        "source": "chat_input-1788437797511",
+        "target": "howlet_agent-1788437801393"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_agent-1788437801393-chat_output-1788437803577",
+        "source": "howlet_agent-1788437801393",
+        "target": "chat_output-1788437803577"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_tool-1788761127805-howlet_agent-1788437801393",
+        "source": "howlet_tool-1788761127805",
+        "target": "howlet_agent-1788437801393"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "id": "chat_input-1788437797511",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 800,
+          "y": 380
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a0672e-d913-7a51-9f9f-e83cb891f84d",
+            "memory_mode": "inherit"
+          },
+          "description": "Run a saved Howlet agent (tools + KB + guardrails)",
+          "icon": "\ud83e\udd16",
+          "label": "qa-s2-triage-ad",
+          "resourceSummary": "single \u00b7 bedrock \u00b7 global.anthropic.claude-haiku-4-5-20251001-v1:0 \u00b7 0 \u00b7 2048"
+        },
+        "dragging": false,
+        "id": "howlet_agent-1788437801393",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1020,
+          "y": 400
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1788437803577",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1220,
+          "y": 360
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_kb",
+          "config": {},
+          "description": "Retrieve relevant chunks from a DataHub KB (RAG)",
+          "icon": "\ud83d\udcda",
+          "label": "Knowledge Base"
+        },
+        "id": "howlet_kb-1788760221616",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1120,
+          "y": 670
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_tool",
+          "config": {
+            "tool_id": "01a06711-5234-786d-9b3a-4ef584b2be4e"
+          },
+          "description": "Execute a custom or bundle tool",
+          "icon": "\ud83d\udd27",
+          "label": "qa-s2-oncelik-ad",
+          "resourceSummary": "python"
+        },
+        "id": "howlet_tool-1788761127805",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 1320,
+          "y": 620
+        },
+        "selected": true,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a06733-01d6-7b0a-81b0-742afd41e9a1",
+  "metadata_extra": null,
+  "name": "qa-s2-akis-ad",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 69,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

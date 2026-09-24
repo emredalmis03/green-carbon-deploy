@@ -1,0 +1,99 @@
+{
+  "chunking_profile_id": "${ref:chunking_profile:Default Structure}",
+  "confidence_threshold": 0.2,
+  "description": "",
+  "document_manifest": [
+    {
+      "content_sha256": "00151811fa5261d57609ae64c444824c337ec881a210aed8f49b7addb22cc364",
+      "document_id": "2f64d08e-abf3-4996-81dd-b83b63ff0d0c",
+      "filename": "Anadolu U\u0308niversitesi Bu\u0308tu\u0308nles\u0327ik Yu\u0308ksek Lisans Program\u0131 Uygulama Usul ve Esaslar\u0131.pdf"
+    },
+    {
+      "content_sha256": "22c8ed8d4ac9c660c9d672dd50620e4c839ea8c4651873aafc961c69876ae729",
+      "document_id": "5cd8bb08-4e49-4e5d-a295-1c4ac1b697bb",
+      "filename": "Anadolu U\u0308niversitesi Lisansu\u0308stu\u0308 Eg\u0306itim-O\u0308g\u0306retim ve S\u0131nav Yo\u0308netmelig\u0306i.pdf"
+    },
+    {
+      "content_sha256": "26b945cf42c0bd01fa342a013ef38d8454538e97a3476cc09fde6f57403fc6d2",
+      "document_id": "d413f903-f1e4-437a-9eed-cf16f805bd46",
+      "filename": "7592 Say\u0131l\u0131 Kanun I\u0307le 2547 Say\u0131l\u0131 Kanuna Eklenen Gec\u0327ici Madde 85 Uygulama I\u0307lkeleri.pdf"
+    },
+    {
+      "content_sha256": "2e733aac412f295110d4fa81bd050eb5b30c3c517476aa6581049bca88d03963",
+      "document_id": "4fe67c6f-e88d-4185-9249-eca6675a97af",
+      "filename": "Anadolu U\u0308niversitesi Tezli Yu\u0308ksek Lisans O\u0308g\u0306rencilerinin Doktora ve Sanatta Yeterlilik Programlar\u0131ndan Ders Almas\u0131na I\u0307lis\u0327kin Usul ve Esaslar\u0131.pdf"
+    },
+    {
+      "content_sha256": "393fbb5c4f71dcd7f26b818410a9ff0a465ab9a2bda02302e8ba84c32db9ec82",
+      "document_id": "9397ed1a-e3f4-49e9-a3d2-9ceb205176d5",
+      "filename": "Anadolu U\u0308niversitesi Lisansu\u0308stu\u0308 Eg\u0306itim Enstitu\u0308su\u0308 O\u0308zel Yetenek S\u0131nav\u0131 ile O\u0308g\u0306renci Alan Programlara Dair S\u0131nav Yo\u0308nergesi.pdf"
+    },
+    {
+      "content_sha256": "421ea9626d05b730921fd6d0afe9f81696b76a993ad30d209e12532785e77c3d",
+      "document_id": "855b0d6f-e78a-4dc7-b804-8f5044396ad2",
+      "filename": "2026-2027-kilavuz-e06dc3314731d0aa.pdf"
+    },
+    {
+      "content_sha256": "4d22ea8c1a9bcf495b607fd4e9a189715af3c454f2bb36d0e5a18ea7e3bcc60a",
+      "document_id": "bd59a028-fc4b-4128-be65-ffdcf3e02765",
+      "filename": "YO\u0308K Lisansu\u0308stu\u0308 Eg\u0306itim ve O\u0308g\u0306retim Yo\u0308netmelig\u0306i.pdf"
+    },
+    {
+      "content_sha256": "5edb884382ddc4345f506160de91fb3c107607746be6fe5cb6fc2b6d9c3a75e1",
+      "document_id": "5d10b2c5-93b8-4d82-a7fc-85009ecc51a8",
+      "filename": "Anadolu U\u0308niversitesi Lisansu\u0308stu\u0308 Eg\u0306itim Ensitu\u0308su\u0308 Kabul Belgesi ile O\u0308g\u0306renci Al\u0131m\u0131na I\u0307lis\u0327kin Uygulama Usul ve Esaslar\u0131.pdf"
+    },
+    {
+      "content_sha256": "8492cfdb7ffbb315ddb43b95ce233e7489cf30abcbc10a8f9e20b6d2d25ed59e",
+      "document_id": "7f2b19ec-4e9f-48ca-afb6-08311d6dd847",
+      "filename": "au\u0308 af ilkeleri.pdf"
+    },
+    {
+      "content_sha256": "cd3179e71203baf3c848adcfeff467fe45fe780a6da5a41ddfb2196aae7ca92d",
+      "document_id": "846e37b2-4e3f-483e-abb5-38502b209b69",
+      "filename": "Anadolu U\u0308niversitesi O\u0308nlisans-Lisans-Lisansu\u0308stu\u0308 Programlar\u0131n Bu\u0308tu\u0308nleme S\u0131navlar\u0131na I\u0307lis\u0327kin Uygulama Esaslar\u0131.pdf"
+    },
+    {
+      "content_sha256": "ffa5c508c9c4657c852c47985a06a09f2383a57f74fe68b7967662706c09471f",
+      "document_id": "9cec1aff-8a8d-46bf-8c63-1f6aa9d37b96",
+      "filename": "Anadolu U\u0308niversitesi Hakl\u0131 ve Gec\u0327erli Nedenler Yo\u0308nergesi.pdf"
+    }
+  ],
+  "document_manifest_total": 11,
+  "document_manifest_truncated": false,
+  "embedding_profile_id": "${ref:embedding_profile:Default Bedrock Titan v2}",
+  "id": "01a0cdc4-d610-7a4f-9bb4-fe563986aa59",
+  "index_profile_id": "${ref:index_profile:Default pgvector}",
+  "index_signature": null,
+  "indexed_origin_hash": "3222a52cb2aa2de183715e911b6320f5445dd09640abd9e399495ae04e3922d9",
+  "kb_digest": "c35313243bbde7fad2edfefb6dbd723dd5a44965696c44936b5310880cfacd38",
+  "kb_digest_complete": true,
+  "kb_digest_profiles_pinned": true,
+  "name": "Anadolu LEE - Anadolu (Se\u00e7enek B)",
+  "parser_forbid_external": false,
+  "parser_mode": "llm",
+  "parser_model": null,
+  "parser_model_base_url": null,
+  "parser_model_card_id": null,
+  "parser_profile_id": "${ref:parser_profile:Default LLM parser}",
+  "parser_prompt": null,
+  "parser_provider": null,
+  "pii_config": {},
+  "pii_profile_id": "${ref:pii_profile:Default Hash (Turkish identifiers)}",
+  "profile_pins": {
+    "chunking": "08fb8bf5-59be-46f7-a873-cbebc6488097",
+    "embedding": "3ce02127-d579-48fb-84d2-fff8d2683d2c",
+    "index": "e37e1493-0482-4346-a8eb-904dd0a2fd96",
+    "names": {
+      "chunking": "Default Structure",
+      "embedding": "Default Bedrock Titan v2",
+      "index": "Default pgvector",
+      "parser": "Default LLM parser",
+      "pii": "Default Hash (Turkish identifiers)"
+    },
+    "parser": "c4a3cc92-7826-48e6-9804-c5f8e4feb29b",
+    "parser_mode": "llm",
+    "parser_model": null,
+    "pii": "5602da55-d80f-4618-96ad-eb2deda41cc4"
+  }
+}

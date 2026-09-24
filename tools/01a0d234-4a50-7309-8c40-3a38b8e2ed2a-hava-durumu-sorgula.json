@@ -1,0 +1,56 @@
+{
+  "api_config": {
+    "headers": {},
+    "method": "GET",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude={{latitude}}&longitude={{longitude}}&current=temperature_2m,weather_code,wind_speed_10m&timezone=auto"
+  },
+  "description": "D\u00fcnya'n\u0131n herhangi bir \u015fehrinin hava durumunu sorgular - s\u0131cakl\u0131k, hava durumu kodu, r\u00fczgar h\u0131z\u0131",
+  "input_schema": {
+    "properties": {
+      "latitude": {
+        "description": "Enlem (\u00f6rn: Ankara=39.93)",
+        "type": "number"
+      },
+      "longitude": {
+        "description": "Boylam (\u00f6rn: Ankara=32.86)",
+        "type": "number"
+      },
+      "sehir": {
+        "description": "\u015eehir ad\u0131 (\u00f6rn: Ankara, \u0130stanbul)",
+        "type": "string"
+      }
+    },
+    "required": [
+      "sehir",
+      "latitude",
+      "longitude"
+    ],
+    "type": "object"
+  },
+  "language": "python",
+  "name": "Hava Durumu Sorgula",
+  "output_schema": {
+    "properties": {
+      "hava_aciklama": {
+        "type": "string"
+      },
+      "hava_kodu": {
+        "type": "integer"
+      },
+      "ruzgar_hizi": {
+        "description": "R\u00fczgar h\u0131z\u0131 (km/h)",
+        "type": "number"
+      },
+      "sehir": {
+        "type": "string"
+      },
+      "sicaklik": {
+        "description": "S\u0131cakl\u0131k (\u00b0C)",
+        "type": "number"
+      }
+    },
+    "type": "object"
+  },
+  "source_code": null,
+  "tool_type": "api_config"
+}

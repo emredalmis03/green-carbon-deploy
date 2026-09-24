@@ -1,0 +1,32 @@
+{
+  "agent_type": "single",
+  "created_by_name": "",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a09028-22dd-7b04-99a9-1948c8f3d372",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "ajanhowlet",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 3,
+  "version_id": null
+}

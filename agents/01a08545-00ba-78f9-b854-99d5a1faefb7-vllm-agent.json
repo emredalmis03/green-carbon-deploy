@@ -1,0 +1,52 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a08545-00ba-78f9-b854-99d5a1faefb7",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": false,
+    "kb_ids": [
+      "01a0668c-96ca-7227-b837-9f9a8057c9f4"
+    ],
+    "retrieval_mode": "rag",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 16568,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.8
+  },
+  "model_card_id": "01a08156-6dfd-71e2-a652-a9b063a2f4d0",
+  "model_name": "vllm:model",
+  "model_provider": "vllm",
+  "multi_agent_config": null,
+  "name": "vLLM Agent",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a080ac-718c-75fb-bb0b-56f57faa211a",
+      "01a080ac-6c42-73c0-93ba-a6e9c86feb9f",
+      "01a080ac-6f01-77d8-8af8-e0c795259b9b",
+      "01a080ac-69b1-7b2e-a086-4e52670f5930",
+      "01a018b1-4244-7d36-8c1b-e059450b7294"
+    ]
+  },
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

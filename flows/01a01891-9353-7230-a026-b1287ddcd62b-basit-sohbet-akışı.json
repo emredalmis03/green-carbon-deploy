@@ -1,0 +1,110 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e-input_1-llm_1-0",
+        "source": "input_1",
+        "target": "llm_1"
+      },
+      {
+        "animated": true,
+        "id": "e-llm_1-output_1-1",
+        "source": "llm_1",
+        "target": "output_1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "icon": "\ud83d\udcac",
+          "label": "Kullan\u0131c\u0131 Mesaj\u0131"
+        },
+        "dragging": false,
+        "id": "input_1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 20,
+          "y": 0
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "llm",
+          "componentType": "llm_bedrock",
+          "config": {
+            "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+          },
+          "icon": "\ud83d\udfe0",
+          "label": "Claude Haiku 4.5",
+          "resourceSummary": ""
+        },
+        "dragging": false,
+        "id": "llm_1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 240,
+          "y": 140
+        },
+        "selected": true,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "icon": "\ud83d\udce4",
+          "label": "Cevap"
+        },
+        "id": "output_1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 500,
+          "y": 0
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_secret",
+          "config": {},
+          "description": "Verify a secret is available",
+          "icon": "\ud83d\udd11",
+          "label": "Secret Ref"
+        },
+        "id": "howlet_secret-1787221818775",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 200,
+          "y": 450
+        },
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a01891-9353-7230-a026-b1287ddcd62b",
+  "metadata_extra": null,
+  "name": "Basit Sohbet Ak\u0131\u015f\u0131",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 16,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

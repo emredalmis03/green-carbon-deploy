@@ -1,0 +1,16 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "kb_ids": {
+    "kb_ids": []
+  },
+  "max_tokens": 800,
+  "metadata_extra": null,
+  "model_name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "name": "qa-s1-owl-ad",
+  "system_prompt": "Sen \u015firket i\u00e7i \u0130K politika asistan\u0131s\u0131n. Yaln\u0131zca ba\u011fl\u0131 bilgi taban\u0131ndaki belgelere dayanarak\nT\u00fcrk\u00e7e cevap ver ve cevab\u0131n sonunda kaynak dosya ad\u0131n\u0131 yaz. Bilgi taban\u0131nda kar\u015f\u0131l\u0131\u011f\u0131 olmayan\nsorulara \"Bu konu bilgi taban\u0131nda yer alm\u0131yor\" de, tahmin y\u00fcr\u00fctme. K\u0131sa ve net ol.",
+  "temperature": 0.2,
+  "tools_config": null
+}

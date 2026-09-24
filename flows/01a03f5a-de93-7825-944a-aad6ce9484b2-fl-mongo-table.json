@@ -1,0 +1,89 @@
+{
+  "description": "flow uyum kontrolu",
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "e1",
+        "source": "chat_input-1",
+        "target": "conn-1"
+      },
+      {
+        "animated": true,
+        "id": "e2",
+        "source": "conn-1",
+        "target": "chat_output-1"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_input",
+          "config": {},
+          "icon": "*",
+          "label": "In"
+        },
+        "id": "chat_input-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 400,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_connector",
+          "config": {
+            "connection_id": "01a03d95-583c-73c1-ab68-273c3ce4b0f3",
+            "data_mode": "table",
+            "max_rows": 3,
+            "table": "howlet_retail.customers"
+          },
+          "icon": "*",
+          "label": "mongo/table"
+        },
+        "id": "conn-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 560,
+          "y": 400
+        },
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "chat_output",
+          "config": {},
+          "icon": "*",
+          "label": "Out"
+        },
+        "id": "chat_output-1",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 720,
+          "y": 400
+        },
+        "type": "howletNode"
+      }
+    ]
+  },
+  "id": "01a03f5a-de93-7825-944a-aad6ce9484b2",
+  "metadata_extra": null,
+  "name": "fl-mongo-table",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

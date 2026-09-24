@@ -1,0 +1,49 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a0672e-d913-7a51-9f9f-e83cb891f84d",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": false,
+    "kb_ids": [
+      "01a05c69-2efe-70ab-8ad1-5ddb8f72f272"
+    ],
+    "retrieval_mode": "rag",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": "01a0671c-cb46-7a47-ae3b-33b21cbd87bb",
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "qa-s2-triage-ad",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "Sen destek talebi s\u0131n\u0131fland\u0131rma ajan\u0131s\u0131n. Her talep i\u00e7in \u00f6nce qa-s2-oncelik arac\u0131n\u0131 \u00e7a\u011f\u0131r.\nCevab\u0131n\u0131 yaln\u0131z \u015fu JSON ile ver: {\"priority\": \"...\", \"category\": \"fatura|teknik|kargo|diger\", \"reply\": \"m\u00fc\u015fteriye 1-2 c\u00fcmlelik T\u00fcrk\u00e7e yan\u0131t\"}.\nVeri seti sorular\u0131nda ba\u011fl\u0131 veri seti analiz arac\u0131n\u0131 kullan ve sonucu k\u0131sa tablo olarak ver.",
+  "temperature": 0.0,
+  "tools_config": {
+    "tool_ids": [
+      "01a06711-5234-786d-9b3a-4ef584b2be4e"
+    ]
+  },
+  "version": 2,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

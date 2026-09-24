@@ -1,0 +1,62 @@
+{
+  "created_by_name": "",
+  "description": "Anadolu LEE Chatbot test flow - Agent + Chat Input/Output",
+  "flow_data": {
+    "edges": [
+      {
+        "source": "chat_input_node",
+        "target": "agent_node"
+      },
+      {
+        "source": "agent_node",
+        "target": "chat_output_node"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "componentType": "chat_input",
+          "config": {},
+          "label": "User Input"
+        },
+        "id": "chat_input_node",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "data": {
+          "componentType": "howlet_agent",
+          "config": {
+            "agent_id": "01a0ce1b-a881-77cb-b99e-ed06032a796a"
+          },
+          "label": "Anadolu LEE Chatbot"
+        },
+        "id": "agent_node",
+        "position": {
+          "x": 300.0,
+          "y": 0.0
+        }
+      },
+      {
+        "data": {
+          "componentType": "chat_output",
+          "config": {},
+          "label": "Answer"
+        },
+        "id": "chat_output_node",
+        "position": {
+          "x": 600.0,
+          "y": 0.0
+        }
+      }
+    ]
+  },
+  "id": "01a0ce1b-fb88-7878-8d01-e3eb26009481",
+  "metadata_extra": null,
+  "name": "Anadolu LEE Chatbot (Test Flow)",
+  "project_id": "1ba46ca9-9eac-4dcf-862d-7919cc243cae",
+  "version": 6,
+  "version_id": "d944be00-07d2-4392-8a38-c359fa2480a0"
+}

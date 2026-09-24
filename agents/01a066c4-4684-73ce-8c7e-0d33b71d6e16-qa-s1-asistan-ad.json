@@ -1,0 +1,49 @@
+{
+  "agent_type": "single",
+  "created_by_name": "",
+  "description": null,
+  "guardrail_ids": {
+    "execution_ids": [],
+    "input_ids": [],
+    "output_ids": [
+      "01a066bb-e0fa-7f8c-87fe-990538290cfe"
+    ]
+  },
+  "id": "01a066c4-4684-73ce-8c7e-0d33b71d6e16",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": true,
+    "kb_ids": [],
+    "retrieval_mode": "rag",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 800,
+  "memory_config": {},
+  "memory_enabled": true,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 2,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_card_id": "01a09197-a2fc-7e2b-97f5-cf9e2d3e7383",
+  "model_name": "vllm:model",
+  "model_provider": "vllm",
+  "multi_agent_config": null,
+  "name": "qa-s1-asistan-ad",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "Sen \u015firket i\u00e7i \u0130K politika asistan\u0131s\u0131n. Yaln\u0131zca ba\u011fl\u0131 bilgi taban\u0131ndaki belgelere dayanarak\nT\u00fcrk\u00e7e cevap ver ve cevab\u0131n sonunda kaynak dosya ad\u0131n\u0131 yaz. Bilgi taban\u0131nda kar\u015f\u0131l\u0131\u011f\u0131 olmayan\nsorulara \"Bu konu bilgi taban\u0131nda yer alm\u0131yor\" de, tahmin y\u00fcr\u00fctme. K\u0131sa ve net ol.",
+  "temperature": 0.2,
+  "tools_config": null,
+  "version": 2,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

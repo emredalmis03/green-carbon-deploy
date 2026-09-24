@@ -1,0 +1,33 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a04237-a525-7d02-b683-d5a5f0fd660c",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "agent_for_eventb (copy)",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "status": "active",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": null,
+  "version": 3,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

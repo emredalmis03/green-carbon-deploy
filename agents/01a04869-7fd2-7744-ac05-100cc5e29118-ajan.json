@@ -1,0 +1,46 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": {
+    "execution_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ],
+    "input_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ],
+    "output_ids": [
+      "01a0351f-8922-73b3-bf7f-cccdeb1d922c"
+    ]
+  },
+  "id": "01a04869-7fd2-7744-ac05-100cc5e29118",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": true,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "vllm:model",
+  "model_provider": "vllm",
+  "multi_agent_config": null,
+  "name": "ajan",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a046f0-5083-7cad-8945-35d8600becff"
+    ]
+  },
+  "version": 4,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

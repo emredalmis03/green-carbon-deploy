@@ -1,0 +1,129 @@
+{
+  "description": null,
+  "flow_data": {
+    "edges": [
+      {
+        "animated": true,
+        "id": "xy-edge__chat_input-1788173746287-llm_bedrock-1788269936568",
+        "source": "chat_input-1788173746287",
+        "target": "llm_bedrock-1788269936568"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__llm_bedrock-1788269936568-chat_output-1787295677881",
+        "source": "llm_bedrock-1788269936568",
+        "target": "chat_output-1787295677881"
+      },
+      {
+        "animated": true,
+        "id": "xy-edge__howlet_dataset-1788270183136-llm_bedrock-1788269936568",
+        "source": "howlet_dataset-1788270183136",
+        "target": "llm_bedrock-1788269936568"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_output",
+          "config": {},
+          "description": "The reply shown back to the user",
+          "icon": "\ud83d\udce4",
+          "label": "Chat Output"
+        },
+        "dragging": false,
+        "id": "chat_output-1787295677881",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 520,
+          "y": 80
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "io",
+          "componentType": "chat_input",
+          "config": {},
+          "description": "The user's message - flow entry point",
+          "icon": "\ud83d\udcac",
+          "label": "Chat Input"
+        },
+        "dragging": false,
+        "id": "chat_input-1788173746287",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 180,
+          "y": 0
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "llm",
+          "componentType": "llm_bedrock",
+          "config": {
+            "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+          },
+          "description": "Call a model via AWS Bedrock",
+          "icon": "\ud83d\udfe0",
+          "label": "Claude Haiku 4.5",
+          "resourceSummary": ""
+        },
+        "dragging": false,
+        "id": "llm_bedrock-1788269936568",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 340,
+          "y": 80
+        },
+        "selected": false,
+        "type": "howletNode"
+      },
+      {
+        "data": {
+          "category": "howlet",
+          "componentType": "howlet_dataset",
+          "config": {
+            "dataset_id": "9fe718a9-4894-45b5-9b39-726eb8d7a5d3",
+            "mode": "sample"
+          },
+          "description": "Load a DataHub dataset into the flow",
+          "icon": "\ud83d\udcca",
+          "label": "numerical-dataset",
+          "resourceSummary": ""
+        },
+        "dragging": false,
+        "id": "howlet_dataset-1788270183136",
+        "measured": {
+          "height": 56,
+          "width": 56
+        },
+        "position": {
+          "x": 200,
+          "y": 120
+        },
+        "selected": false,
+        "type": "howletNode"
+      }
+    ],
+    "variables": {}
+  },
+  "id": "01a018c4-38c8-7b5d-8d41-f85ac36b65b5",
+  "metadata_extra": null,
+  "name": "yeni flow",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "version": 95,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

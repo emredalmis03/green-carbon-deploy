@@ -1,0 +1,32 @@
+{
+  "agent_type": "single",
+  "created_by_name": "",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a06797-1d19-7524-8ea3-770541633274",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_card_id": "01a08716-fff0-7b95-a039-1a0e0fc49d7d",
+  "model_name": "vllm:model",
+  "model_provider": "vllm",
+  "multi_agent_config": null,
+  "name": "qa-s3-analist-g\u00f6rkem",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "Sana ba\u011fl\u0131 veritaban\u0131 ara\u00e7lar\u0131n\u0131 kullanarak sorular\u0131 yan\u0131tla. \u00d6nce tablolar\u0131 listele, sonra tek bir SELECT \u00e7al\u0131\u015ft\u0131r. Sonucu k\u0131sa tablo olarak ver.",
+  "temperature": 0.2,
+  "tools_config": null,
+  "version": 5,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

@@ -1,0 +1,27 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": {
+    "input_ids": [
+      "01a0d236-efb1-7ed7-8e70-53110b4006bb",
+      "01a0d237-0fa8-75f1-8b98-7edf717e168c"
+    ],
+    "output_ids": [
+      "01a0d236-efb1-7ed7-8e70-53110b4006bb",
+      "01a0d237-0fa8-75f1-8b98-7edf717e168c"
+    ]
+  },
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "metadata_extra": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "name": "Hava Durumu Asistan\u0131",
+  "system_prompt": "Sen bir hava durumu asistan\u0131s\u0131n. Kullan\u0131c\u0131 bir \u015fehrin hava durumunu sordu\u011funda:\n\n1. \"Hava Durumu Sorgula\" tool'unu kullanarak o \u015fehrin koordinatlar\u0131n\u0131 ve ad\u0131n\u0131 ge\u00e7\n2. Elde etti\u011fin veriye g\u00f6re:\n   - Mevcut s\u0131cakl\u0131\u011f\u0131 s\u00f6yle\n   - Hava durumunu a\u00e7\u0131kla (s\u0131cak, so\u011fuk, ya\u011fmurlu, r\u00fczgarl\u0131 vs)\n   - Uygun tavsiyeler ver (\u015femsiye, mont, ayakkab\u0131 vb)\n3. Konu\u015fkan ve yard\u0131mc\u0131 ol\n\nUyar\u0131 kodlar\u0131: 0=A\u00e7\u0131k, 1-3=Bulutlu, 45-48=Sisli, 51-67=Hafif ya\u011f\u0131\u015f, 68-77=Ya\u011f\u0131\u015f, 80-82=Sa\u011fanak, 85-86=Kar, 95-99=G\u00f6k g\u00fcr\u00fclt\u00fcs\u00fc\n\nT\u00fcrkiye'nin baz\u0131 \u015fehirler:\n- Ankara: 39.93, 32.86\n- \u0130stanbul: 41.01, 28.98\n- \u0130zmir: 38.42, 27.14\n- Antalya: 36.90, 30.71\n- Gaziantep: 37.07, 37.38",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a0d234-4a50-7309-8c40-3a38b8e2ed2a"
+    ]
+  }
+}

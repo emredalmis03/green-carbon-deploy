@@ -1,0 +1,36 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a03357-d0e3-7e4f-b936-c28573c37707",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_base_url": null,
+  "model_card_id": null,
+  "model_name": "global.amazon.nova-2-lite-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "Percentage Change Agent",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "G\u00f6revin verilen iki say\u0131 aras\u0131ndaki y\u00fczdelik de\u011fi\u015fimi bulmak, bunun harici kendini tan\u0131tmaktan ba\u015fka hi\u00e7bir soruya cevap verme, sadece 2 say\u0131 aras\u0131ndaki oran fark\u0131n\u0131 bulmakla y\u00fck\u00fcml\u00fc oldu\u011funu s\u00f6yle",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a0334c-f114-73d5-9c6e-1c77a323f12c"
+    ]
+  },
+  "version": 2,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

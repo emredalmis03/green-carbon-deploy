@@ -1,0 +1,52 @@
+{
+  "api_config": {
+    "runtime": {
+      "entrypoint": "",
+      "timeout": 60
+    }
+  },
+  "description": "A tool for scientific calculator",
+  "input_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "query": {
+        "description": "Mathematical expression to evaluate, for example: sin(pi / 4) + sqrt(16)",
+        "type": "string"
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "type": "object"
+  },
+  "language": "python",
+  "name": "Scientific Calculator",
+  "output_schema": {
+    "properties": {
+      "error": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "result": {
+        "type": [
+          "number",
+          "integer",
+          "null"
+        ]
+      },
+      "success": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "success",
+      "result",
+      "error"
+    ],
+    "type": "object"
+  },
+  "source_code": "import ast\nimport math\nimport operator\n\n\n# Allowed binary operators\nBINARY_OPERATORS = {\n    ast.Add: operator.add,\n    ast.Sub: operator.sub,\n    ast.Mult: operator.mul,\n    ast.Div: operator.truediv,\n    ast.Pow: operator.pow,\n    ast.Mod: operator.mod,\n}\n\n# Allowed unary operators\nUNARY_OPERATORS = {\n    ast.UAdd: operator.pos,\n    ast.USub: operator.neg,\n}\n\n# Supported scientific functions\nFUNCTIONS = {\n    \"sqrt\": math.sqrt,\n    \"sin\": math.sin,\n    \"cos\": math.cos,\n    \"tan\": math.tan,\n    \"asin\": math.asin,\n    \"acos\": math.acos,\n    \"atan\": math.atan,\n    \"sinh\": math.sinh,\n    \"cosh\": math.cosh,\n    \"tanh\": math.tanh,\n    \"log\": math.log,       # Natural log, or log(x, base)\n    \"ln\": math.log,\n    \"log10\": math.log10,\n    \"exp\": math.exp,\n    \"abs\": abs,\n    \"floor\": math.floor,\n    \"ceil\": math.ceil,\n    \"factorial\": math.factorial,\n    \"degrees\": math.degrees,\n    \"radians\": math.radians,\n}\n\nCONSTANTS = {\n    \"pi\": math.pi,\n    \"e\": math.e,\n    \"tau\": math.tau,\n}\n\n\ndef evaluate(node):\n    if isinstance(node, ast.Expression):\n        return evaluate(node.body)\n\n    if isinstance(node, ast.Constant):\n        if isinstance(node.value, (int, float)) and not isinstance(node.value, bool):\n            return node.value\n        raise ValueError(\"Only numeric constants are allowed.\")\n\n    if isinstance(node, ast.BinOp):\n        operator_type = type(node.op)\n\n        if operator_type not in BINARY_OPERATORS:\n            raise ValueError(\"Unsupported operator.\")\n\n        left = evaluate(node.left)\n        right = evaluate(node.right)\n\n        return BINARY_OPERATORS[operator_type](left, right)\n\n    if isinstance(node, ast.UnaryOp):\n        operator_type = type(node.op)\n\n        if operator_type not in UNARY_OPERATORS:\n            raise ValueError(\"Unsupported unary operator.\")\n\n        return UNARY_OPERATORS[operator_type](evaluate(node.operand))\n\n    if isinstance(node, ast.Name):\n        if node.id in CONSTANTS:\n            return CONSTANTS[node.id]\n\n        raise ValueError(f\"Unknown constant: {node.id}\")\n\n    if isinstance(node, ast.Call):\n        if not isinstance(node.func, ast.Name):\n            raise ValueError(\"Invalid function call.\")\n\n        function_name = node.func.id\n\n        if function_name not in FUNCTIONS:\n            raise ValueError(f\"Unsupported function: {function_name}\")\n\n        if node.keywords:\n            raise ValueError(\"Keyword arguments are not supported.\")\n\n        arguments = [evaluate(arg) for arg in node.args]\n\n        return FUNCTIONS[function_name](*arguments)\n\n    raise ValueError(\"Unsupported expression.\")\n\n\ndef execute(input: dict) -> dict:\n    query = input.get(\"query\", \"\")\n\n    if not isinstance(query, str) or not query.strip():\n        return {\n            \"success\": False,\n            \"result\": None,\n            \"error\": \"A non-empty query is required.\"\n        }\n\n    # Prevent excessively large requests\n    if len(query) > 500:\n        return {\n            \"success\": False,\n            \"result\": None,\n            \"error\": \"Expression is too long.\"\n        }\n\n    try:\n        tree = ast.parse(query, mode=\"eval\")\n        result = evaluate(tree)\n\n        # Prevent returning NaN/Infinity\n        if isinstance(result, float) and not math.isfinite(result):\n            raise ValueError(\"Result is not finite.\")\n\n        return {\n            \"success\": True,\n            \"result\": result,\n            \"error\": None\n        }\n\n    except ZeroDivisionError:\n        return {\n            \"success\": False,\n            \"result\": None,\n            \"error\": \"Division by zero.\"\n        }\n\n    except (ValueError, TypeError, OverflowError, SyntaxError) as e:\n        return {\n            \"success\": False,\n            \"result\": None,\n            \"error\": str(e)\n        }\n\n    except Exception:\n        return {\n            \"success\": False,\n            \"result\": None,\n            \"error\": \"Unable to evaluate expression.\"\n        }",
+  "tool_type": "code"
+}

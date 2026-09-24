@@ -1,0 +1,60 @@
+{
+  "agent_type": "single",
+  "created_by_name": "",
+  "description": null,
+  "guardrail_ids": {
+    "execution_ids": [],
+    "input_ids": [
+      "01a08608-bc75-7db5-92e3-0a8125387d1a",
+      "01a089ea-24f1-7de0-ba93-6ab23a5003ac"
+    ],
+    "output_ids": []
+  },
+  "id": "01a0a056-e4d1-7bd1-805b-00516a24a236",
+  "kb_access_mode": "delegated",
+  "kb_ids": {
+    "adaptive_retrieval": false,
+    "faithfulness_gate": false,
+    "faithfulness_threshold": 0.85,
+    "full_context": false,
+    "grader": false,
+    "hybrid": false,
+    "kb_ids": [
+      "01a0900f-5a00-71d2-9f60-2ed5113b1567"
+    ],
+    "retrieval_mode": "rag",
+    "tool_search_budget": 4,
+    "top_k": 5
+  },
+  "max_tokens": 2048,
+  "memory_config": {},
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "enabled_builtin_tools": [],
+    "reasoning": false,
+    "system_prompt_ref": null,
+    "top_p": 0.95
+  },
+  "model_card_id": null,
+  "model_name": "qwen.qwen3-32b-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "tree test agent 2222",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": null,
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a080ac-69b1-7b2e-a086-4e52670f5930",
+      "01a080ac-6f01-77d8-8af8-e0c795259b9b",
+      "01a080ac-644b-7cd4-bfbf-992a065487dd",
+      "01a07bc7-7ff2-7917-ab7c-9bdfa2b3defb",
+      "01a08a40-cdba-78df-8089-6eeb63d574fa"
+    ]
+  },
+  "version": 2,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}

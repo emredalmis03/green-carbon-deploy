@@ -1,0 +1,32 @@
+{
+  "agent_type": "single",
+  "description": null,
+  "guardrail_ids": null,
+  "id": "01a07b9b-1312-7512-9c44-c21719e34314",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 4096,
+  "memory_config": null,
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": {
+    "system_prompt_ref": "01a07c26-0899-7194-9d39-90a4c8796c7d"
+  },
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "zincir-emre-arastirmaci",
+  "project_id": null,
+  "system_prompt": "Turkce cevap ver. Bilmedigin olguyu aracla ara, kaynak adini yaz.",
+  "temperature": 0.7,
+  "tools_config": {
+    "tool_ids": [
+      "01a07bc7-7ff2-7917-ab7c-9bdfa2b3defb"
+    ]
+  },
+  "version": 55,
+  "version_id": null
+}

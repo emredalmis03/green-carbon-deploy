@@ -1,0 +1,32 @@
+{
+  "api_config": {
+    "runtime": {
+      "entrypoint": "calculate_carbon_emission",
+      "timeout": 60
+    }
+  },
+  "description": null,
+  "input_schema": {
+    "properties": {
+      "query": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "type": "object"
+  },
+  "language": "python",
+  "name": "PRJ-01_Tool_CarbonEmissionCalculator",
+  "output_schema": {
+    "properties": {
+      "results": {
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "source_code": "def calculate_carbon_emission(category: str, amount: float) -> str:\n    \"\"\"\n    Kullan\u0131c\u0131n\u0131n harcama kategorisine ve harcama tutar\u0131na (TL) g\u00f6re tahmini karbon ayak izini (kg CO2) hesaplar.\n    \n    Args:\n        category (str): Harcama kategorisi (\u00f6rne\u011fin: 'benzin', 'elektrik', 'g\u0131da', 'giyim', 'u\u00e7ak_bileti').\n        amount (float): Harcama miktar\u0131 (TL cinsinden).\n        \n    Returns:\n        str: Hesaplanm\u0131\u015f karbon sal\u0131n\u0131m\u0131 de\u011ferini ve harcama bilgisini i\u00e7eren \u00f6zet metin.\n    \"\"\"\n    # Demo ama\u00e7l\u0131 temsili emisyon fakt\u00f6rleri (1 TL ba\u015f\u0131na d\u00fc\u015fen tahmini kg CO2)\n    # Ger\u00e7ek bir senaryoda bu veriler harici bir API'dan \u00e7ekilebilir.\n    emission_factors = {\n        \"benzin\": 0.08,\n        \"u\u00e7ak_bileti\": 0.12,\n        \"elektrik\": 0.05,\n        \"g\u0131da\": 0.02,\n        \"giyim\": 0.01,\n        \"diger\": 0.005\n    }\n    \n    # Gelen kategoriyi k\u00fc\u00e7\u00fck harfe \u00e7evirip e\u015fle\u015ftir, bulamazsa 'diger' fakt\u00f6r\u00fcn\u00fc kullan\n    normalized_category = category.lower().strip()\n    factor = emission_factors.get(normalized_category, emission_factors[\"diger\"])\n    \n    # Karbon ayak izini hesapla\n    calculated_co2 = amount * factor\n    \n    # Ajan\u0131n kolayca okuyup kullan\u0131c\u0131ya iletebilece\u011fi string format\u0131nda d\u00f6nd\u00fcr\n    return (\n        f\"Kategori: {category.capitalize()}\\n\"\n        f\"Tutar: {amount} TL\\n\"\n        f\"Tahmini Karbon Ayak \u0130zi: {calculated_co2:.2f} kg CO2\"\n    )",
+  "tool_type": "code"
+}

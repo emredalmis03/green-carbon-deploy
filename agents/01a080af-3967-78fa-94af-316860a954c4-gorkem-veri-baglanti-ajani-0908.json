@@ -1,0 +1,36 @@
+{
+  "agent_type": "single",
+  "description": "Bagli veri baglantilarina (PostgreSQL, MySQL, MongoDB) tool'lar uzerinden sorgu atan test ajani (Gorkem, 2026-09-08).",
+  "guardrail_ids": null,
+  "id": "01a080af-3967-78fa-94af-316860a954c4",
+  "kb_access_mode": "delegated",
+  "kb_ids": null,
+  "max_tokens": 1500,
+  "memory_config": null,
+  "memory_enabled": false,
+  "memory_extraction_model": "",
+  "memory_instructions": null,
+  "memory_window": 20,
+  "metadata_extra": null,
+  "model_card_id": null,
+  "model_name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "model_provider": "bedrock",
+  "multi_agent_config": null,
+  "name": "gorkem-veri-baglanti-ajani-0908",
+  "project_id": "65ac9828-daf4-49a8-b990-6b62cc5073a6",
+  "system_prompt": "You are a data analyst agent. You can query three retail databases through your tools: PostgreSQL (tools gorkem-conn-pg-*), MySQL (gorkem-conn-mysql-*) and MongoDB (gorkem-conn-mongo-*). All three hold the same retail schema: customers, orders, order_items, products, page_events, sensor_readings. Workflow: if unsure about columns, first call a tables or preview tool, then write a read-only SQL SELECT (or a JSON find filter for MongoDB, passing the collection name in 'table'). Always run the query with the tool and answer with the real numbers you got. Answer in Turkish, concisely, and name which database you used.",
+  "temperature": 0.1,
+  "tools_config": {
+    "tool_ids": [
+      "01a080ab-fcc4-70f0-b98e-b1337c93fb1e",
+      "01a080ac-644b-7cd4-bfbf-992a065487dd",
+      "01a080ac-66fb-7d5f-91bd-40f61dd52eeb",
+      "01a080ac-69b1-7b2e-a086-4e52670f5930",
+      "01a080ac-6c42-73c0-93ba-a6e9c86feb9f",
+      "01a080ac-6f01-77d8-8af8-e0c795259b9b",
+      "01a080ac-718c-75fb-bb0b-56f57faa211a"
+    ]
+  },
+  "version": 1,
+  "version_id": "4ea25a28-0af2-46db-a3c0-79470b64e54f"
+}
